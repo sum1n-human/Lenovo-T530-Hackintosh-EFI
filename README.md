@@ -1,10 +1,10 @@
 # Lenovo ThinkPad T530 macOS 15 and 26 EFI
 
-This repository contains the OpenCore EFI configuration files required to run **macOS Sequoia 15.7.9 natively on a Lenovo ThinkPad T530**. 
+This repository contains the OpenCore and CLOVER EFI configuration files required to run **macOS Sequoia 15.8.2 and Tahoe 26.7.2 natively on a Lenovo ThinkPad T530**. 
 
-## 💻 Hardware Configuration
+## 💻 Hardware Configuration 
 
-| Component | Specification & Hackintosh Notes |
+| Component | Specification & Hackintosh Notes |26
 | :--- | :--- |
 | **Laptop Model** | Lenovo ThinkPad T530 |
 | **Processor (CPU)** | Intel Core 3rd Generation (Ivy Bridge - Core i5-3380M) |
@@ -17,7 +17,7 @@ This repository contains the OpenCore EFI configuration files required to run **
 | **Bootloader** | OpenCore v1.0.7 |
 
 ## ⚙️ What Works & What Doesn't
-> ⚠️ **Note:** Running macOS Sequoia on Ivy Bridge hardware requires specific root patching (via OpenCore Legacy Patcher X) for graphics acceleration and wireless networking, as Apple dropped native support for this architecture in recent macOS versions. 
+> ⚠️ **Note:** Running macOS Sequoia and Tahoe on Ivy Bridge hardware requires specific root patching (via OpenCore Legacy Patcher) for graphics acceleration to work, as Apple dropped native support for this architecture in recent macOS versions. 
 
 ### Working
 * Graphic acceleration and metal support on intel HD 4000 using OCLP-X
@@ -31,7 +31,7 @@ This repository contains the OpenCore EFI configuration files required to run **
 * Keyboard and TrackPad / TrackPoint
 
 ### Requires Post-Install Patching
-* **Graphics:** Intel HD 4000 graphics acceleration requires OpenCore Legacy Patcher-X (OCLP-X) root patches.
+* **Graphics:** Intel HD 4000 graphics acceleration requires OpenCore Legacy Patcher (OCLP) root patches.
 * **Wi-Fi/Bluetooth:** Depends on your specific card; Broadcom or Intel cards will require matching kexts and OCLP root patching.
 
 ## 🚀 Getting Started
@@ -48,15 +48,17 @@ This repository contains the OpenCore EFI configuration files required to run **
                         - bit rate > 24 bit
       (note: if you unable to unlock bios then enable > AppleCpuPmCfgLock inside kernel > quirks)
 5.  Set SATA Controller to `AHCI`, disable `Secure Boot, Security Chip`, and set Boot Mode to `UEFI Only or Both with CSM Enable or disable`.
-6. **Generate SMBIOS:** Before booting, use **GenSMBIOS** to generate a unique serial number, Board Serial, and UUID.
+6.  Enable Intel VT-d (Virtualization Technology for direct IO) to enable apple VTD.
+7. **Generate SMBIOS:** Before booting, use **GenSMBIOS** to generate a unique serial number, Board Serial, and UUID.
      link: https://github.com/corpnewt/GenSMBIOS 
-7. **Installation:** Use a standard macOS Sequoia  vanilla installer, copy this EFI to your USB drive's EFI partition, and boot.
-8. **Post-Installation:** Download the latest version of **OpenCore Legacy Patcher-X** using this link "https://github.com/JeoJay127/OCLP-X/releases" to apply the necessary volume root patches for graphics and wireless networking.
-    (note: only use OCLP-X only if you have a intel wireless card otherwise use dortania version: https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
-
+8. **Installation:** Use a standard macOS Sequoia and tahoe vanilla installer, copy this EFI to your USB drive's EFI partition, and boot.
+9. **Post-Installation:** Download the latest version of **OpenCore Legacy Patcher** using this link "(https://github.com/dortania/OpenCore-Legacy-Patcher/releases)" to apply the necessary volume root patches for graphics.
+    (note: only use dortania version: https://github.com/dortania/OpenCore-Legacy-Patcher/releases as other will cause network and audio issues.)
+and 
 ## 🤝 Credits
 * @Acidanthera for OpenCore and essential kexts.
 * @corpnewt for SSDTTime, GenSMBIOS, ProperTree.
 * @Dortania for the comprehensive OpenCore Install Guide and Kexts.
 * @USBToolBox for USB mapping tool and Kext
-* The OpenCore Legacy Patcher team for making macOS Sequoia possible on legacy hardware.
+* The OpenCore Legacy Patcher team for making macOS Sequoia and Tahoe possible on legacy hardware.
+* @laobamac for wifi and audio kexts
