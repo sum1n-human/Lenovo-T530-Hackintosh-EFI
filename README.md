@@ -62,6 +62,10 @@ This repository contains the OpenCore and CLOVER EFI configuration files require
 <img width="1920" height="1080" alt="Screenshot 2026-11-04 at 00 26 11" src="https://github.com/user-attachments/assets/d3fcbf13-f2a0-465a-9577-8bd83e0dcf64" />
 <img width="1920" height="1080" alt="Screenshot 2026-11-04 at 00 25 37" src="https://github.com/user-attachments/assets/34afaa09-67ee-4d03-9df4-bdeee4b4a04d" />
 
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 56 51" src="https://github.com/user-attachments/assets/f0a68856-54c8-41b7-b49c-182bebe600ee" />
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 56 24" src="https://github.com/user-attachments/assets/8599f438-8d3f-4269-8fa1-b78f067d8343" />
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 53 27" src="https://github.com/user-attachments/assets/b50c1ac2-3dad-4e30-9c9d-a36994c1a62d" />
+
 ## 🤝 Credits
 * [@Acidanthera](https://github.com) for OpenCore and core ecosystem kexts.
 * [@corpnewt](https://github.com/corpnewt) for indispensable tools like `SSDTTime`, `GenSMBIOS`, and `ProperTree`.
