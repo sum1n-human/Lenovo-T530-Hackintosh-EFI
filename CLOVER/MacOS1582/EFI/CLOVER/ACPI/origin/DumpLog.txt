@@ -1,0 +1,88 @@
+93:028  0:320  Found BIOS RSDP at f0120
+93:028  0:000  Printing ACPI tables from RSDP f0120 ...
+93:028  0:000   f0120: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+93:028  0:000    (Xsdt: b6ffe170, Rsdt: b6ffe0d4)
+93:028  0:000    b6ffe170: 'XSDT', 'TP-G4', Rev: 1, Len: 196
+93:028  0:000    b6ffe0d4: 'RSDT', 'TP-G4', Rev: 1, Len: 116
+93:028  0:000    Tables in Xsdt: 20
+93:028  0:000    0. b6fe6000: 'FACP', 'TP-G4', Rev: 5, Len: 268
+93:028  0:000        (Dsdt: B6FE8000, Facs: B6F5A000, XDsdt: b6fe8000, XFacs: 0)
+93:028  0:000        b6fe8000: 'DSDT', 'TP-G4', Rev: 1, Len: 66737
+93:030  0:001        b6f5a000: 'FACS', Ver: 1, Len: 64
+93:030  0:000    1. b6ffd000: 'SLIC', 'TP-G4', Rev: 1, Len: 374
+93:030  0:000    2. b6ffc000: 'TCPA', 'LENOVO', Rev: 2, Len: 50
+93:030  0:000    3. b6ffb000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1032
+93:030  0:000    4. b6ffa000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+93:030  0:000    5. b6ff9000: 'SSDT', 'SataAhci', Rev: 1, Len: 1943
+93:030  0:000    6. b6fe4000: 'HPET', 'TP-G4', Rev: 1, Len: 56
+93:030  0:000    7. b6fe3000: 'APIC', 'TP-G4', Rev: 1, Len: 152
+93:030  0:000    8. b6fe2000: 'MCFG', 'TP-G4', Rev: 1, Len: 60
+93:030  0:000    9. b6fe1000: 'ECDT', 'TP-G4', Rev: 1, Len: 82
+93:030  0:000    10. b6fe0000: 'FPDT', 'TP-G4', Rev: 1, Len: 100
+93:030  0:000    11. b6fe7000: 'ASF!', 'TP-G4', Rev: 32, Len: 165
+93:030  0:000    12. b6fdf000: 'UEFI', 'TP-G4', Rev: 1, Len: 62
+93:030  0:000    13. b6fde000: 'UEFI', 'COMBUF', Rev: 1, Len: 66
+93:030  0:000    14. b6fdd000: 'POAT', 'TP-G4', Rev: 3, Len: 85
+93:030  0:000    15. b6fdc000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 3253
+93:030  0:000    16. b6fdb000: 'SSDT', 'CpuPm', Rev: 1, Len: 2691
+93:030  0:000    17. b6fda000: 'DMAR', 'SNB', Rev: 1, Len: 184
+93:030  0:000    18. b6fd9000: 'UEFI', 'TP-G4', Rev: 1, Len: 658
+93:030  0:000    19. b6fd8000: 'DBG2', 'TP-G4', Rev: 0, Len: 233
+93:030  0:000  Found UEFI Acpi 2.0 RSDP at b6ffe014
+93:030  0:000  Saving ACPI tables from RSDP b6ffe014 to ACPI\origin ...
+93:030  0:000   b6ffe014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+93:030  0:000    (Xsdt: b6ffe170, Rsdt: b6ffe0d4)
+93:030  0:000    b6ffe170: 'XSDT', 'TP-G4', Rev: 1, Len: 196
+93:030  0:000    b6ffe0d4: 'RSDT', 'TP-G4', Rev: 1, Len: 116
+93:030  0:000    Tables in Xsdt: 20
+93:030  0:000    0. b6fe6000: 'FACP', 'TP-G4', Rev: 5, Len: 268
+93:030  0:000        (Dsdt: B6FE8000, Facs: B6F5A000, XDsdt: b6fe8000, XFacs: 0)
+93:030  0:000        b6fe8000: 'DSDT', 'TP-G4', Rev: 1, Len: 66737
+93:031  0:001        b6f5a000: 'FACS', Ver: 1, Len: 64
+93:031  0:000    1. b6ffd000: 'SLIC', 'TP-G4', Rev: 1, Len: 374
+93:031  0:000    2. b6ffc000: 'TCPA', 'LENOVO', Rev: 2, Len: 50
+93:031  0:000    3. b6ffb000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1032
+93:031  0:000    4. b6ffa000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+93:031  0:000    5. b6ff9000: 'SSDT', 'SataAhci', Rev: 1, Len: 1943
+93:031  0:000    6. b6fe4000: 'HPET', 'TP-G4', Rev: 1, Len: 56
+93:031  0:000    7. b6fe3000: 'APIC', 'TP-G4', Rev: 1, Len: 152
+93:031  0:000    8. b6fe2000: 'MCFG', 'TP-G4', Rev: 1, Len: 60
+93:031  0:000    9. b6fe1000: 'ECDT', 'TP-G4', Rev: 1, Len: 82
+93:031  0:000    10. b6fe0000: 'FPDT', 'TP-G4', Rev: 1, Len: 100
+93:031  0:000    11. b6fe7000: 'ASF!', 'TP-G4', Rev: 32, Len: 165
+93:031  0:000    12. b6fdf000: 'UEFI', 'TP-G4', Rev: 1, Len: 62
+93:031  0:000    13. b6fde000: 'UEFI', 'COMBUF', Rev: 1, Len: 66
+93:031  0:000    14. b6fdd000: 'POAT', 'TP-G4', Rev: 3, Len: 85
+93:031  0:000    15. b6fdc000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 3253
+93:031  0:000    16. b6fdb000: 'SSDT', 'CpuPm', Rev: 1, Len: 2691
+93:031  0:000    17. b6fda000: 'DMAR', 'SNB', Rev: 1, Len: 184
+93:031  0:000    18. b6fd9000: 'UEFI', 'TP-G4', Rev: 1, Len: 658
+93:031  0:000    19. b6fd8000: 'DBG2', 'TP-G4', Rev: 0, Len: 233
+93:031  0:000  Found UEFI Acpi 1.0 RSDP at b6ffe000
+93:031  0:000  Printing ACPI tables from RSDP b6ffe000 ...
+93:031  0:000   b6ffe000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+93:031  0:000    (Rsdt: b6ffe038)
+93:031  0:000    b6ffe038: 'RSDT', 'TP-G4', Rev: 1, Len: 112
+93:031  0:000    Tables in Rsdt: 19
+93:031  0:000    0. b6fe5000: 'FACP', 'TP-G4', Rev: 4, Len: 244
+93:031  0:000        (Dsdt: B6FE8000, Facs: B6F5A000, XDsdt: 0, XFacs: 0)
+93:031  0:000        b6fe8000: 'DSDT', 'TP-G4', Rev: 1, Len: 66737
+93:033  0:001        b6f5a000: 'FACS', Ver: 1, Len: 64
+93:033  0:000    1. b6ffc000: 'TCPA', 'LENOVO', Rev: 2, Len: 50
+93:033  0:000    2. b6ffb000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1032
+93:033  0:000    3. b6ffa000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+93:033  0:000    4. b6ff9000: 'SSDT', 'SataAhci', Rev: 1, Len: 1943
+93:033  0:000    5. b6fe4000: 'HPET', 'TP-G4', Rev: 1, Len: 56
+93:033  0:000    6. b6fe3000: 'APIC', 'TP-G4', Rev: 1, Len: 152
+93:033  0:000    7. b6fe2000: 'MCFG', 'TP-G4', Rev: 1, Len: 60
+93:033  0:000    8. b6fe1000: 'ECDT', 'TP-G4', Rev: 1, Len: 82
+93:033  0:000    9. b6fe0000: 'FPDT', 'TP-G4', Rev: 1, Len: 100
+93:033  0:000    10. b6fe7000: 'ASF!', 'TP-G4', Rev: 32, Len: 165
+93:033  0:000    11. b6fdf000: 'UEFI', 'TP-G4', Rev: 1, Len: 62
+93:033  0:000    12. b6fde000: 'UEFI', 'COMBUF', Rev: 1, Len: 66
+93:033  0:000    13. b6fdd000: 'POAT', 'TP-G4', Rev: 3, Len: 85
+93:033  0:000    14. b6fdc000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 3253
+93:033  0:000    15. b6fdb000: 'SSDT', 'CpuPm', Rev: 1, Len: 2691
+93:033  0:000    16. b6fda000: 'DMAR', 'SNB', Rev: 1, Len: 184
+93:033  0:000    17. b6fd9000: 'UEFI', 'TP-G4', Rev: 1, Len: 658
+93:033  0:000    18. b6fd8000: 'DBG2', 'TP-G4', Rev: 0, Len: 233

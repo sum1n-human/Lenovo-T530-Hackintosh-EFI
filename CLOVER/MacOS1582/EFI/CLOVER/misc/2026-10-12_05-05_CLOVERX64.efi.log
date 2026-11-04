@@ -1,0 +1,1302 @@
+0:100  0:100  MemLog inited, TSC freq: 2893425361
+0:100  0:000  CPU was calibrated with ACPI PM Timer
+0:100  0:000  CloverX64 : Image base = 0xA21D1000
+0:100  0:000  Clover ImageHandle = a6476c98
+0:100  0:000  SelfDirPath = \EFI\CLOVER
+0:104  0:004  === [ Starting Clover ] =========================
+0:104  0:000  Now is 12.10.2026,  05:05:46 (GMT+255)
+0:104  0:000  Starting Clover revision: 5175 (HEAD, commit cb0bd252b) on Lenovo EFI
+0:104  0:000  Build id: 20260830231146-cb0bd25-5175
+0:104  0:000  Build with: [Args: -D NO_GRUB_DRIVERS_EMBEDDED -D LESS_DEBUG -t GCC161 | --cmd-len=50000 -D NO_GRUB_DRIVERS_EMBEDDED -D LESS_DEBUG --conf=/Users/runner/work/CloverBootloader/CloverBootloader/Conf -D USE_LOW_EBDA -D ENABLE_MODERN_CPU_QUIRKS -a X64 -b RELEASE -t GCC161 -n 4 | OS: 26.5.2]
+0:104  0:000  === [ Get Smbios ] ==============================
+0:104  0:000  Type 16 Index = 0
+0:104  0:000  Total Memory Slots Count = 2
+0:104  0:000  Type 17 Index = 0
+0:104  0:000  SmbiosTable.Type17->SlotIndex = 0
+0:104  0:000  SmbiosTable.Type17->ModuleSize = 4096MB
+0:104  0:000  SmbiosTable.Type17->Type = 24
+0:104  0:000  SmbiosTable.Type17->Frequency = 1600MHz
+0:104  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 ChannelA-DIMM0
+0:104  0:000  SmbiosTable.Type17->Vendor = Samsung
+0:104  0:000  SmbiosTable.Type17->SerialNo = 96ABDD72
+0:104  0:000  SmbiosTable.Type17->PartNo = M471B5273CH0-CK0
+0:104  0:000  Type 17 Index = 1
+0:104  0:000  SmbiosTable.Type17->SlotIndex = 1
+0:104  0:000  SmbiosTable.Type17->ModuleSize = 4096MB
+0:104  0:000  SmbiosTable.Type17->Type = 24
+0:104  0:000  SmbiosTable.Type17->Frequency = 1600MHz
+0:104  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 ChannelB-DIMM0
+0:104  0:000  SmbiosTable.Type17->Vendor = Kingston
+0:104  0:000  SmbiosTable.Type17->SerialNo = 531484B7
+0:104  0:000  SmbiosTable.Type17->PartNo = 9905469-055.A00LF
+0:104  0:000  Boot status=0
+0:104  0:000  Running on: '2429BG0' with board '2429BG0'
+0:104  0:000  === [ GetCPUProperties ] ========================
+0:104  0:000  CPU Vendor = 756E6547 Model=306A9
+0:104  0:000   The CPU supported SSE4.1
+0:104  0:000   The CPU supported RDRAND
+0:104  0:000  BrandString = Intel(R) Core(TM) i5-3380M CPU @ 2.90GHz
+0:104  0:000   The CPU supported turbo
+0:104  0:000   Energy PerfBias is  visible:
+0:104  0:000  MSR 0x35               20004
+0:104  0:000  MSR 0xE2 before patch 1E000404
+0:104  0:000  MSR 0xCE              00080C10_E0011D00
+0:104  0:000  corrected FLEX_RATIO = 0
+0:104  0:000  MSR 0x1B0             00000000
+0:104  0:000  FSBFrequency = 100 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:105  0:000  MaxDiv/MinDiv: 29.0/12
+0:105  0:000  Turbo: 34/34/34/36
+0:105  0:000  Features: 0x77BAE3FFBFEBFBFF
+0:105  0:000  Threads: 4
+0:105  0:000  Cores: 2
+0:105  0:000  FSB: 100 MHz
+0:105  0:000  CPU: 2900 MHz
+0:105  0:000  TSC: 2900 MHz
+0:105  0:000  PIS: 100 MHz
+0:105  0:000  ExternalClock: 25 MHz
+0:105  0:000  === [ GetDevices ] ==============================
+0:105  0:000  Found more than one GOP protocol ??? Using the first one
+0:105  0:000  GOP found at: 
+0:105  0:000  PCI (00|00:1D.00) : 8086 1E26 class=0C0320
+0:105  0:000  PCI (00|00:1A.00) : 8086 1E2D class=0C0320
+0:105  0:000  PCI (00|00:14.00) : 8086 1E31 class=0C0330
+0:105  0:000  PCI (00|00:1C.00) : 8086 1E10 class=060400
+0:105  0:000  PCI (00|02:00.00) : 1180 E823 class=088001
+0:105  0:000  PCI (00|00:02.00) : 8086 0166 class=030000
+0:105  0:000   - GFX: Model=Intel HD Graphics 4000 (Intel)
+0:105  0:000  PCI (00|00:1F.00) : 8086 1E55 class=060100
+0:105  0:000  PCI (00|00:01.00) : 8086 0151 class=060400
+0:105  0:000  PCI (00|00:1C.01) : 8086 1E12 class=060400
+0:105  0:000  PCI (00|00:1F.02) : 8086 1E03 class=010601
+0:105  0:000  PCI (00|00:00.00) : 8086 0154 class=060000
+0:105  0:000  PCI (00|01:00.00) : 10DE 0DEF class=030000
+0:105  0:000   - GFX: Model=GeForce family 1FF (NVidia unknown)
+0:105  0:000  PCI (00|01:00.01) : FFFF FFFF class=FFFFFF
+0:105  0:000  PCI (00|00:16.00) : 8086 1E3A class=078000
+0:105  0:000  PCI (00|00:16.01) : FFFF FFFF class=FFFFFF
+0:105  0:000  PCI (00|00:16.03) : 8086 1E3D class=070002
+0:105  0:000  PCI (00|00:19.00) : 8086 1502 class=020000
+0:105  0:000   - LAN: 1 Vendor=Intel
+0:105  0:000  Legacy MAC address of LAN #0= 54:EE:75:00:80:E2:
+0:105  0:000  PCI (00|00:1B.00) : 8086 1E20 class=040300
+0:105  0:000  PCI (00|03:00.00) : 8086 4238 class=028000
+0:105  0:000   - WIFI: Vendor= Intel
+0:105  0:000  PCI (00|00:1F.03) : 8086 1E22 class=0C0500
+0:105  0:000  PCI (00|00:1F.06) : FFFF FFFF class=FFFFFF
+0:105  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\2429BG0--54-EE-75-00-80-E2'. Dir doesn't exist.
+0:105  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\2429BG0\UEFI'. Dir doesn't exist.
+0:105  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\2429BG0'. Dir doesn't exist.
+0:105  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\2429BG0-2900'. Dir doesn't exist.
+0:105  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\2429BG0'. Dir doesn't exist.
+0:105  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\2429BG0-2900'. Dir doesn't exist.
+0:105  0:000  === [ GetUserSettings ] =========================
+0:105  0:000  GetDefaultModel()=MacBookAir5,2
+0:105  0:000  === [ LoadUserSettings ] ========================
+0:108  0:003  Using config.plist at path: \EFI\CLOVER
+0:109  0:000  === [ LoadUserSettings ] ========================
+0:109  0:000  Cannot find smbios.plist at path '\EFI\CLOVER' : Not Found
+0:109  0:000  '\EFI\CLOVER\smbios.plist' not loaded. Efi error Not Found
+0:109  0:000  create SMBIOS list, found 28 dicts
+0:109  0:000  ... ACPI
+0:109  0:000  ... Boot
+0:109  0:000  ... CPU
+0:109  0:000  ... Devices
+0:109  0:000  ... GUI
+0:109  0:000  ... Graphics
+0:109  0:000  ... KernelAndKextPatches
+0:109  0:000  ... SMBIOS
+0:109  0:000  ... SystemParameters
+0:109  0:000  ... RtVariables
+0:109  0:000  ... Quirks
+0:109  0:000  get model from config.plist
+0:109  0:000  BiosVersion: MBP161.88Z.F000.B00.2303040347
+0:175  0:065  BiosReleaseDate: 03/04/2023
+0:193  0:018  EfiVersion: 1968.100.17.0.0
+0:212  0:018  Calibrated TSC Frequency = 2893425361 = 2893MHz
+0:231  0:018  === [ GetListOfThemes ] =========================
+0:254  0:022  - [00]: Glass
+0:308  0:054  - [01]: my-own
+0:349  0:040  === [ Found config plists ] =====================
+0:368  0:019  - config.plist
+0:386  0:018  === [ LoadDrivers ] =============================
+0:408  0:022  Loading HfsPlus.efi status=Success
+0:468  0:059   - driver needs connecting
+0:485  0:017  Loading ApfsDriverLoader.efi status=Success
+0:544  0:059   - driver needs connecting
+0:562  0:017  2 drivers needs connecting ...
+0:581  0:018  PlatformDriverOverrideProtocol not found. Installing ... Success
+0:620  0:038  HFS+ driver loaded
+0:639  0:019  APFS driver loaded
+0:659  0:019  Searching for invalid DiskIo BY_DRIVER connects: not found, all ok
+1:879  1:220  === [ InitScreen ] ==============================
+1:902  0:022  Console modes reported: 7, available modes:
+1:919  0:017   - [01]: 80x25
+1:937  0:017   - [02]: 80x50
+1:955  0:018   - [03]: 160x53
+1:973  0:017   - [04]: 128x40
+1:991  0:017   - [05]: 80x25
+2:009  0:018   - [06]: 100x31
+2:028  0:018   - [07]: 240x56 (current mode)
+2:046  0:018  SetScreenResolution: 1920x1080 - already set
+2:084  0:037  SetScreenResolution: 1920x1080 - already set
+2:132  0:047  Using embedded font
+2:151  0:018  === [ ScanSPD ] =================================
+2:170  0:019  SMBus device : 8086 1E22 class=0C0500 status=Success
+2:190  0:020  SMBus CmdReg: 0x3
+2:209  0:018  Scanning SMBus [8086:1E22], mmio: 0xF4934004, ioport: 0xEFA0, hostc: 0x1
+2:227  0:018  Slots to scan [8]...
+2:247  0:019  SPD[0]: Type 11 @0x50
+2:285  0:038  Not using XMP because it is not present
+2:303  0:018  DDR speed 1600MHz
+2:322  0:019  Slot: 0 Type 24 4096MB 1600MHz Vendor=Samsung PartNo=M471B5273CH0-CK0 SerialNo=96ABDD72
+2:342  0:019  SPD[1]: Type 11 @0x51
+2:379  0:037  Not using XMP because it is not present
+2:398  0:018  DDR speed 1600MHz
+2:431  0:032  Slot: 1 Type 24 4096MB 1600MHz Vendor=Kingston PartNo=9905469-055.A00LF SerialNo=531484B7
+2:449  0:018  SPD[4]: Type 82 @0x54
+2:468  0:018  SPD[5]: Type 82 @0x55
+2:487  0:019  SPD[6]: Type 78 @0x56
+2:505  0:018  === [ GetAcpiTablesList ] =======================
+2:523  0:018  Get Acpi Tables List from RSDT: count=21
+2:559  0:035   - [00]: FACP  TP-G4    len=244
+2:577  0:018   - [01]: SLIC  TP-G4    len=374
+2:596  0:018   - [02]: TCPA  LENOVO len=50
+2:613  0:017   - [03]: SSDT  TP-SSDT2 len=1032
+2:631  0:017   - [04]: SSDT  TP-SSDT1 len=51
+2:651  0:019   - [05]: SSDT  SataAhci len=1943
+2:668  0:017   - [06]: HPET  TP-G4    len=56
+2:687  0:018   - [07]: APIC  TP-G4    len=152
+2:706  0:018   - [08]: MCFG  TP-G4    len=60
+2:725  0:019   - [09]: ECDT  TP-G4    len=82
+2:743  0:018   - [10]: FPDT  TP-G4    len=100
+2:762  0:018   - [11]: ASF!  TP-G4    len=165
+2:780  0:018   - [12]: UEFI  TP-G4    len=62
+2:800  0:019   - [13]: UEFI  COMBUF len=66
+2:817  0:017   - [14]: POAT  TP-G4    len=85
+2:836  0:018   - [15]: SSDT  Cpu0Ist len=3253
+2:854  0:018   - [16]: SSDT  CpuPm len=2691
+2:873  0:019   - [17]: DMAR  SNB  len=184
+2:892  0:019   - [18]: SSDT  IffsAsl len=208
+2:910  0:017   - [19]: UEFI  TP-G4    len=658
+2:928  0:018   - [20]: DBG2  TP-G4    len=233
+2:947  0:018   - [00]: Drop table : DMAR,                0 :  yes
+2:983  0:036   - [01]: Drop table : SSDT,       6d50757043 :  yes
+3:019  0:036   - [02]: Drop table : SSDT,   74734930757043 :  yes
+3:055  0:035  Custom boot CUSTOM_BOOT_DISABLED (0x0)
+3:073  0:018  Sub entry custom boot CUSTOM_BOOT_DISABLED (0xA6404760)
+3:092  0:019  Sub entry custom boot CUSTOM_BOOT_DISABLED (0xA6404D60)
+3:111  0:018  Default theme: my-own
+3:129  0:018  Set FakeCPUID: 0x0
+3:147  0:017  === [ Found DSDT tables ] =======================
+3:165  0:017  === [ InitKextList ] ============================
+3:187  0:022  Added Kext=Other\AirportItlwm.kext (2.3.0)
+3:216  0:028  Added Kext=Other\AMFIPass.kext (1.4.1)
+3:272  0:056  Added Kext=Other\AppleALC.kext (1.9.7)
+3:294  0:022  Added Kext=Other\AppleIntelCPUPowerManagement.kext (222.0.0)
+3:317  0:022  Added Kext=Other\AppleIntelCPUPowerManagementClient.kext (222.0.0)
+3:340  0:023  Added Kext=Other\BlueToolFixup.kext (2.7.2)
+3:363  0:022  Added Kext=Other\BrightnessKeys.kext (1.0.3)
+3:385  0:022  Added Kext=Other\CryptexFixup.kext (1.0.5)
+3:407  0:022  Added Kext=Other\FeatureUnlock.kext (1.1.8)
+3:429  0:021  Added Kext=Other\CSLVFixup.kext (2.6.1)
+3:452  0:022  Added Kext=Other\ECEnabler.kext (1.0.6)
+3:474  0:022  Added Kext=Other\RSRHelper.kext (1.0.2)
+3:503  0:029  Added Kext=Other\HibernationFixup.kext (1.5.4)
+3:537  0:033  Added Kext=Other\IntelMausi.kext (1.0.8)
+3:566  0:029  Added Kext=Other\IO80211FamilyLegacy.kext (1200.12.2b1)
+3:592  0:026  Added Kext=Other\IOSkywalkFamily.kext (1.0)
+3:625  0:032  Added Kext=Other\Lilu.kext (1.7.2)
+3:647  0:022  Added Kext=Other\DisableLibraryValidation.kext (1)
+3:676  0:028  Added Kext=Other\SMCBatteryManager.kext (1.3.7)
+3:709  0:033  Added Kext=Other\SMCProcessor.kext (1.3.7)
+3:731  0:021  Added Kext=Other\SMCSuperIO.kext (1.3.7)
+3:759  0:028  Added Kext=Other\USBToolBox.kext (1.2.0)
+3:785  0:026  Added Kext=Other\UTBMap.kext (1.1)
+3:805  0:020  Added Kext=Other\VirtualSMC.kext (1.3.7)
+3:831  0:026  Added Kext=Other\VoodooPS2Controller.kext (2.3.7)
+3:855  0:023  ---| added plugin=VoodooPS2Trackpad.kext (2.3.7)
+3:882  0:026  ---| added plugin=VoodooPS2Keyboard.kext (2.3.7)
+3:904  0:021  ---| added plugin=VoodooPS2Mouse.kext (2.3.7)
+3:923  0:019  ---| added plugin=VoodooInput.kext (1.1.6)
+3:945  0:022  Added Kext=Other\WhateverGreen.kext (1.7.0)
+3:968  0:023  Added Kext=Other\RestrictEvents.kext (1.1.6)
+3:989  0:020  === [ ScanVolumes ] =============================
+4:008  0:019  Found 41 volumes with blockIO
+4:027  0:019  - [00]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)
+4:101  0:073          Result of bootcode detection: bootable unknown (legacy)
+4:120  0:018  - [01]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,6A6ACF33-80A6-4CBE-B46A-1B3C7A60195F,0x800,0x32000)
+4:164  0:044          Result of bootcode detection: bootable unknown (legacy)
+4:183  0:018            label : EFI-REFIND
+4:201  0:018  - [02]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,103A2A9A-4001-40EE-913F-0B08931101BE,0x32800,0x100000)
+4:250  0:049          Result of bootcode detection: bootable unknown (legacy)
+4:268  0:017            label : EFI-OC-I
+4:286  0:018  - [03]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,FD3BE910-EFDD-49E0-8FCF-AA9C900074CA,0x132800,0x100000)
+4:325  0:039          Result of bootcode detection: bootable unknown (legacy)
+4:344  0:019            label : EFI-CLOV-I
+4:363  0:018  - [04]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,C55A237A-FF7D-42DF-9251-AC233FFCD091,0x232800,0x32000)
+4:409  0:045          Result of bootcode detection: bootable Windows (vista,win)
+4:435  0:025            label : EFI-WIN25H2
+4:454  0:018  - [05]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(5,GPT,7BC43ACD-24F6-4B38-9B99-D7134C111F58,0x264800,0x40000)
+4:497  0:043  - [06]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(6,GPT,E08E4C9E-F1B7-4EEA-8851-1F7C96658DC0,0x2A4800,0x11000000)
+4:541  0:043          Result of bootcode detection: bootable Windows (vista,win)
+4:559  0:017  - [07]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(7,GPT,61C0A99C-D1C9-4A2C-8470-8CA1D5EE1C86,0x112A4800,0x400000)
+4:611  0:052          Result of bootcode detection: bootable unknown (legacy)
+4:630  0:019            label : EFI-Parrot
+4:649  0:019  - [08]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(8,GPT,B2F033AA-8334-4A23-B06E-8A715170180B,0x116A4800,0x800000)
+4:695  0:046          Result of bootcode detection: bootable unknown (legacy)
+4:715  0:019  - [09]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(9,GPT,0FD78007-E0CE-49E2-9814-FEA71135CDD3,0x11EA4800,0xFD0000)
+4:760  0:045          Result of bootcode detection: bootable unknown (legacy)
+4:779  0:018  - [10]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(10,GPT,D463387D-965B-449C-A15D-9C81D1ACBE1B,0x12E74800,0xFD90800)
+4:826  0:047          Result of bootcode detection: bootable unknown (legacy)
+4:844  0:018  - [11]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)
+4:901  0:056          Result of bootcode detection: bootable unknown (legacy)
+4:919  0:018  - [12]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)
+4:956  0:037          Result of bootcode detection: bootable unknown (legacy)
+4:975  0:018  - [13]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(1,GPT,80A9A306-1D81-4590-9693-C5AD5952F2A8,0x800,0x32000)
+5:011  0:036          Result of bootcode detection: bootable unknown (legacy)
+5:031  0:019            label : EFI-RUH
+5:050  0:018  - [14]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(2,GPT,9A1F37D2-AAC0-4867-A120-ECE0C57323D1,0x32800,0x100000)
+5:090  0:040          Result of bootcode detection: bootable unknown (legacy)
+5:108  0:018            label : EFI-OCUH
+5:127  0:018  - [15]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(3,GPT,2880F549-142A-46D4-AD9E-28D41DCC6A0C,0x132800,0xCE000)
+5:171  0:044          Result of bootcode detection: bootable unknown (legacy)
+5:189  0:017            label : EFI-CUH
+5:207  0:018          This is SelfVolume !!
+5:225  0:018  - [16]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(4,GPT,5187AF7C-F9F5-4BDE-9026-29D8ED05F26F,0x800800,0x32000)
+5:263  0:037          Result of bootcode detection: bootable Windows (vista,win)
+5:280  0:017            label : EFI-WINUSB
+5:298  0:017  - [17]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(5,GPT,91E480D8-C01F-4287-9C8D-BF837B3D0E59,0x832800,0x40000)
+5:336  0:037  - [18]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(6,GPT,2AE892DE-76AC-42E9-98B3-49BFC096EBA9,0x872800,0x20000000)
+5:381  0:045          Result of bootcode detection: bootable Windows (vista,win)
+5:400  0:018  - [19]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(7,GPT,36E0D3D3-F6B8-4FA7-86B1-FA77083D372A,0x20872800,0x2000000)
+5:436  0:036          Result of bootcode detection: bootable Windows (vista,win)
+5:454  0:017  - [20]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(8,GPT,99C1741A-34FF-4436-AF55-CC8B59FADDB7,0x22872800,0x400000)
+5:491  0:037          Result of bootcode detection: bootable Windows (vista,win)
+5:510  0:018  - [21]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(9,GPT,75A6C17A-A228-4A17-A073-FE3C540074B0,0x42A72800,0x3B9800)
+5:547  0:036          Result of bootcode detection: bootable unknown (legacy)
+5:565  0:018            label : EFI
+5:583  0:018  - [22]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(11,GPT,4F3E768C-72D6-497E-A34F-BFAA5C865DA7,0x42E5B800,0x3B9800)
+5:621  0:037  - [23]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(12,GPT,93229568-00A3-48A9-B559-ED37CF9D013C,0x43215000,0x773800)
+5:660  0:038          Result of bootcode detection: bootable unknown (legacy)
+5:678  0:018  - [24]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(13,GPT,777D5A1C-4CAA-4166-B9D3-64AC69A0EB1B,0x43988800,0x1DD000)
+5:715  0:036  - [25]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(14,GPT,CF7F0911-247E-4423-B9E0-FDCC06E73163,0x43B65800,0x1DCD800)
+5:752  0:037          Result of bootcode detection: bootable unknown (legacy)
+5:771  0:019  - [26]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(15,GPT,0F0C82BC-9240-4C63-9CAB-3089FB57408E,0x45933000,0x3B9B000)
+5:811  0:039  - [27]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(16,GPT,16352840-0EC1-4122-AF4E-67E09C4FC1A8,0x494CE000,0x7735800)
+5:849  0:038  - [28]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(17,GPT,74956C79-AB66-4B14-9AA8-D897315853E6,0x50C03800,0x7735800)
+5:885  0:036  - [29]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(18,GPT,2A05EC9A-A474-4510-BFF3-03CC7824F583,0x58339000,0x3B9B000)
+5:924  0:038  - [30]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(19,GPT,1F89E5EC-967F-42B6-850B-28BF5C66DAC3,0x5BED4000,0x3B9B000)
+5:961  0:036  - [31]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(20,GPT,0C285AAC-0F06-40BD-ADC4-9E238C458473,0x5FA6F000,0x1DCD800)
+6:001  0:040  - [32]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(21,GPT,4F3F0E6C-DD98-4345-9439-5201146AAFE9,0x6183C800,0x174E000)
+6:038  0:036  - [33]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(22,GPT,48765408-7030-4313-A6FB-0FF45A1A04AF,0x62F8A800,0x85766000)
+6:075  0:037          Result of bootcode detection: bootable unknown (legacy)
+6:094  0:018  - [34]: Volume: PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(23,GPT,7FF317F3-918C-439D-B7E2-77B083B7539E,0xE86F0800,0x3A3D0F000)
+6:133  0:038          Result of bootcode detection: bootable unknown (legacy)
+6:152  0:018  - [35]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)
+6:187  0:035            apfsFileSystemUUID=20174E35-5362-49DB-BFE4-32732590F31C, ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE, ApfsRole=0x10
+6:235  0:047            label : Preboot
+6:253  0:018  - [36]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,FF855478D20B8949B4E36F986B7212A4)
+6:289  0:036            apfsFileSystemUUID=785485FF-0BD2-4989-B4E3-6F986B7212A4, ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE, ApfsRole=0x40
+6:611  0:321            label : MacOSX - Data
+6:632  0:021  - [37]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B69782DC0D49884AAE745B0046FBC4AF)
+6:671  0:038            apfsFileSystemUUID=DC8297B6-490D-4A88-AE74-5B0046FBC4AF, ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE, ApfsRole=0x4
+6:689  0:018            label : Recovery
+6:708  0:018  - [38]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,275C5B0A8B6AAC4EB00371494AB7F9DA)
+6:745  0:036            apfsFileSystemUUID=0A5B5C27-6A8B-4EAC-B003-71494AB7F9DA, ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE, ApfsRole=0x1
+6:910  0:165            label : MacOSX
+6:930  0:020  - [39]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,DC01931F77977447959AAAD04C886004)
+6:967  0:036            apfsFileSystemUUID=1F9301DC-9777-4774-959A-AAD04C886004, ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE, ApfsRole=0xc0
+6:986  0:019            label : Update
+7:003  0:017  - [40]: Volume: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B65BE4701734F04BB316A40F804BADEA)
+7:040  0:036            apfsFileSystemUUID=70E45BB6-3417-4BF0-B316-A40F804BADEA, ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE, ApfsRole=0x8
+7:059  0:019            label : VM
+7:077  0:017  No AudioIoProtocols, status=Not Found
+7:096  0:018  === [ InitXTheme ] ==============================
+7:114  0:017  use night theme
+7:138  0:024  Using theme 'my-own' (my-own)
+7:157  0:019  OS main and drive as badge
+7:259  0:102  theme inited
+7:278  0:018  Chosen theme my-own
+7:296  0:018  after NVRAM boot-args=-v debug=0x100 -wegnoegpu -amfipassbeta ipc_control_port_options=0 revpatch=f16c,sbvmm
+7:316  0:019  === [ Dump SMC keys from NVRAM ] ================
+7:335  0:019  found AppleSMC protocol
+7:377  0:041     fakesmc-key-RPlt-ch8*:6A 31 35 32 66 00 00 00 
+7:563  0:185     fakesmc-key-BEMB-flag:01 
+7:617  0:054     fakesmc-key-BATP-flag:00 
+7:672  0:055     fakesmc-key-BNum-ui8:01 
+7:727  0:054     fakesmc-key-BBIN-ui8:01 
+7:783  0:056     fakesmc-key-MSTc-ui8:00 
+7:837  0:054     fakesmc-key-MSAc-ui16:00 00 
+7:911  0:074     fakesmc-key-MSWr-ui8:00 
+7:966  0:055     fakesmc-key-MSFW-ui8:01 00 
+8:041  0:074     fakesmc-key-MSPS-ui16:00 03 
+8:120  0:079  Registered 10 SMC keys
+8:143  0:022  === [ AddCustomEntries ] ========================
+8:161  0:017  - [00]: 'Arch Linux'
+8:180  0:019      Checking volume "EFI-REFIND" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,6A6ACF33-80A6-4CBE-B46A-1B3C7A60195F,0x800,0x32000)) ... skipped because path '\vmlinuz-linux' does not exist
+8:216  0:036      Checking volume "EFI-OC-I" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,103A2A9A-4001-40EE-913F-0B08931101BE,0x32800,0x100000)) ... skipped because volume does not match
+8:254  0:037      Checking volume "EFI-CLOV-I" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,FD3BE910-EFDD-49E0-8FCF-AA9C900074CA,0x132800,0x100000)) ... skipped because volume does not match
+8:291  0:036      Checking volume "EFI-WIN25H2" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,C55A237A-FF7D-42DF-9251-AC233FFCD091,0x232800,0x32000)) ... skipped because volume does not match
+8:328  0:036      Checking volume "EFI-Parrot" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(7,GPT,61C0A99C-D1C9-4A2C-8470-8CA1D5EE1C86,0x112A4800,0x400000)) ... skipped because volume does not match
+8:363  0:035      Checking volume "EFI-RUH" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(1,GPT,80A9A306-1D81-4590-9693-C5AD5952F2A8,0x800,0x32000)) ... skipped because media is ignored (VolumeType=1 DiskKind=1)
+8:408  0:044      Checking volume "EFI-OCUH" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(2,GPT,9A1F37D2-AAC0-4867-A120-ECE0C57323D1,0x32800,0x100000)) ... skipped because media is ignored (VolumeType=1 DiskKind=1)
+8:446  0:037      Checking volume "EFI-CUH" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(3,GPT,2880F549-142A-46D4-AD9E-28D41DCC6A0C,0x132800,0xCE000)) ... skipped because media is ignored (VolumeType=1 DiskKind=1)
+8:483  0:037      Checking volume "EFI-WINUSB" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(4,GPT,5187AF7C-F9F5-4BDE-9026-29D8ED05F26F,0x800800,0x32000)) ... skipped because media is ignored (VolumeType=1 DiskKind=1)
+8:519  0:036      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(9,GPT,75A6C17A-A228-4A17-A073-FE3C540074B0,0x42A72800,0x3B9800)) ... skipped because media is ignored (VolumeType=1 DiskKind=1)
+8:555  0:035      Checking volume "Preboot" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)) ...   - search volume 'EFI-REFIND', but MediaPath '20174E35-5362-49DB-BFE4-32732590F31C' 
+8:591  0:036  skipped because volume does not match
+8:609  0:017      Checking volume "MacOSX - Data" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,FF855478D20B8949B4E36F986B7212A4)) ...   - search volume 'EFI-REFIND', but MediaPath '785485FF-0BD2-4989-B4E3-6F986B7212A4' 
+8:649  0:039  skipped because volume does not match
+8:668  0:019      Checking volume "Recovery" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B69782DC0D49884AAE745B0046FBC4AF)) ...   - search volume 'EFI-REFIND', but MediaPath 'DC8297B6-490D-4A88-AE74-5B0046FBC4AF' 
+8:707  0:038  skipped because volume does not match
+8:726  0:018      Checking volume "MacOSX" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,275C5B0A8B6AAC4EB00371494AB7F9DA)) ...   - search volume 'EFI-REFIND', but MediaPath '0A5B5C27-6A8B-4EAC-B003-71494AB7F9DA' 
+8:763  0:036  skipped because volume does not match
+8:780  0:017      Checking volume "Update" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,DC01931F77977447959AAAD04C886004)) ...   - search volume 'EFI-REFIND', but MediaPath '1F9301DC-9777-4774-959A-AAD04C886004' 
+8:816  0:035  skipped because volume does not match
+8:835  0:018      Checking volume "VM" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B65BE4701734F04BB316A40F804BADEA)) ...   - search volume 'EFI-REFIND', but MediaPath '70E45BB6-3417-4BF0-B316-A40F804BADEA' 
+8:873  0:038  skipped because volume does not match
+8:891  0:018  - [00]: 'Gentoo Linux'
+8:909  0:017      Checking volume "EFI-REFIND" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,6A6ACF33-80A6-4CBE-B46A-1B3C7A60195F,0x800,0x32000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+8:946  0:037      Checking volume "EFI-OC-I" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,103A2A9A-4001-40EE-913F-0B08931101BE,0x32800,0x100000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+8:983  0:036      Checking volume "EFI-CLOV-I" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,FD3BE910-EFDD-49E0-8FCF-AA9C900074CA,0x132800,0x100000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:027  0:044      Checking volume "EFI-WIN25H2" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,C55A237A-FF7D-42DF-9251-AC233FFCD091,0x232800,0x32000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:063  0:035      Checking volume "EFI-Parrot" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(7,GPT,61C0A99C-D1C9-4A2C-8470-8CA1D5EE1C86,0x112A4800,0x400000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:099  0:036      Checking volume "EFI-RUH" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(1,GPT,80A9A306-1D81-4590-9693-C5AD5952F2A8,0x800,0x32000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:136  0:036      Checking volume "EFI-OCUH" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(2,GPT,9A1F37D2-AAC0-4867-A120-ECE0C57323D1,0x32800,0x100000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:171  0:035      Checking volume "EFI-CUH" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(3,GPT,2880F549-142A-46D4-AD9E-28D41DCC6A0C,0x132800,0xCE000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:208  0:036      Checking volume "EFI-WINUSB" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(4,GPT,5187AF7C-F9F5-4BDE-9026-29D8ED05F26F,0x800800,0x32000)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:245  0:037      Checking volume "EFI" (PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(9,GPT,75A6C17A-A228-4A17-A073-FE3C540074B0,0x42A72800,0x3B9800)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:283  0:037      Checking volume "Preboot" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:320  0:037      Checking volume "MacOSX - Data" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,FF855478D20B8949B4E36F986B7212A4)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:359  0:038      Checking volume "Recovery" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B69782DC0D49884AAE745B0046FBC4AF)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:396  0:037      Checking volume "MacOSX" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,275C5B0A8B6AAC4EB00371494AB7F9DA)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:437  0:040      Checking volume "Update" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,DC01931F77977447959AAAD04C886004)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:476  0:038      Checking volume "VM" (PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B65BE4701734F04BB316A40F804BADEA)) ... skipped because path '\EFI\Gentoo\grub.efi' does not exist
+9:513  0:037  === [ ScanLoader ] ==============================
+9:532  0:019  - [01]: 'EFI-REFIND'
+9:568  0:036        AddLoaderEntry for Volume Name=EFI-REFIND, idx=0
+9:587  0:018        OSVersion= Build=
+9:607  0:019  OSIconName=unknown 
+9:624  0:017  OSName=unknown Title=
+9:643  0:018        IconName=unknown comma=-1 size=7
+9:662  0:018        Full=unknown
+9:682  0:020        Loader entry created for 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(1,GPT,6A6ACF33-80A6-4CBE-B46A-1B3C7A60195F,0x800,0x32000)\EFI\BOOT\BOOTX64.efi'
+9:700  0:018       hiding entry: \EFI\BOOT\BOOTX64.efi
+9:728  0:027        Menu entry added at index 0
+9:746  0:018       hiding entry because DiskKind is DISK_KIND_INTERNAL: \EFI\BOOT\BOOTX64.efi
+9:764  0:017  - [02]: 'EFI-OC-I'
+9:800  0:036        AddLoaderEntry for Volume Name=EFI-OC-I, idx=1
+9:818  0:017        OSVersion= Build=
+9:836  0:018  OSIconName=unknown 
+9:854  0:018  OSName=unknown Title=
+9:873  0:018        IconName=unknown comma=-1 size=7
+9:892  0:018        Full=unknown
+9:910  0:018        Loader entry created for 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(2,GPT,103A2A9A-4001-40EE-913F-0B08931101BE,0x32800,0x100000)\EFI\BOOT\BOOTX64.efi'
+9:928  0:017       hiding entry: \EFI\BOOT\BOOTX64.efi
+9:946  0:018        Menu entry added at index 1
+9:965  0:019       hiding entry because DiskKind is DISK_KIND_INTERNAL: \EFI\BOOT\BOOTX64.efi
+9:983  0:017  - [03]: 'EFI-CLOV-I'
+10:020  0:037        AddLoaderEntry for Volume Name=EFI-CLOV-I, idx=2
+10:040  0:019        OSVersion= Build=
+10:057  0:017  OSIconName=unknown 
+10:075  0:018  OSName=unknown Title=
+10:094  0:018        IconName=unknown comma=-1 size=7
+10:113  0:019        Full=unknown
+10:132  0:019        Loader entry created for 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(3,GPT,FD3BE910-EFDD-49E0-8FCF-AA9C900074CA,0x132800,0x100000)\EFI\BOOT\BOOTX64.efi'
+10:149  0:017       hiding entry: \EFI\BOOT\BOOTX64.efi
+10:168  0:018        Menu entry added at index 2
+10:186  0:017       hiding entry because DiskKind is DISK_KIND_INTERNAL: \EFI\BOOT\BOOTX64.efi
+10:207  0:021  - [04]: 'EFI-WIN25H2'
+10:244  0:036        AddLoaderEntry for Volume Name=EFI-WIN25H2, idx=3
+10:261  0:017        OSVersion= Build=
+10:279  0:018  OSIconName=vista,win 
+10:298  0:019  OSName=vista Title=
+10:316  0:017        IconName=vista,win comma=5 size=9
+10:334  0:018        first=os_vista
+10:354  0:019        Loader entry created for 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,C55A237A-FF7D-42DF-9251-AC233FFCD091,0x232800,0x32000)\EFI\microsoft\Boot\bootmgfw.efi'
+10:372  0:017        Menu entry added at index 3
+10:390  0:018        AddLoaderEntry for Volume Name=EFI-WIN25H2, idx=4
+10:409  0:018        OSVersion= Build=
+10:426  0:017  OSIconName=unknown 
+10:444  0:018  OSName=unknown Title=
+10:463  0:018        IconName=unknown comma=-1 size=7
+10:482  0:018        Full=unknown
+10:499  0:017        Loader entry created for 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(4,GPT,C55A237A-FF7D-42DF-9251-AC233FFCD091,0x232800,0x32000)\EFI\BOOT\BOOTX64.efi'
+10:517  0:017       hiding entry: \EFI\BOOT\BOOTX64.efi
+10:537  0:019        Menu entry added at index 4
+10:556  0:019       hiding entry because DiskKind is DISK_KIND_INTERNAL: \EFI\BOOT\BOOTX64.efi
+10:575  0:019  - [07]: 'EFI-Parrot'
+10:611  0:035    found entry parrot,linux
+10:629  0:018        AddLoaderEntry for Volume Name=EFI-Parrot, idx=5
+10:648  0:018        OSVersion= Build=
+10:666  0:017  assigned linux name icon linux
+10:684  0:018  OSIconName=linux 
+10:703  0:018  OSName=linux Title=
+10:722  0:019        Loader entry created for 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(7,GPT,61C0A99C-D1C9-4A2C-8470-8CA1D5EE1C86,0x112A4800,0x400000)\EFI\Parrot\grubx64.efi'
+10:741  0:018        Menu entry added at index 5
+10:759  0:018  - [13]: 'EFI-RUH'
+10:813  0:053        AddLoaderEntry for Volume Name=EFI-RUH, idx=6
+10:832  0:018        OSVersion= Build=
+10:849  0:017  OSIconName=unknown 
+10:868  0:018  OSName=unknown Title=
+10:886  0:018        IconName=unknown comma=-1 size=7
+10:904  0:018        Full=unknown
+10:923  0:018        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(1,GPT,80A9A306-1D81-4590-9693-C5AD5952F2A8,0x800,0x32000)\EFI\BOOT\BOOTX64.efi'
+10:941  0:017       hiding entry: \EFI\BOOT\BOOTX64.efi
+10:959  0:018        Menu entry added at index 6
+10:978  0:018       hiding entry because DiskKind is DISK_KIND_EXTERNAL: \EFI\BOOT\BOOTX64.efi
+10:995  0:017  - [14]: 'EFI-OCUH'
+11:032  0:036        AddLoaderEntry for Volume Name=EFI-OCUH, idx=7
+11:057  0:025        OSVersion= Build=
+11:076  0:018  OSIconName=unknown 
+11:095  0:018  OSName=unknown Title=
+11:115  0:020        IconName=unknown comma=-1 size=7
+11:132  0:017        Full=unknown
+11:150  0:018        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(2,GPT,9A1F37D2-AAC0-4867-A120-ECE0C57323D1,0x32800,0x100000)\EFI\BOOT\BOOTX64.efi'
+11:170  0:019       hiding entry: \EFI\BOOT\BOOTX64.efi
+11:189  0:019        Menu entry added at index 7
+11:207  0:018       hiding entry because DiskKind is DISK_KIND_EXTERNAL: \EFI\BOOT\BOOTX64.efi
+11:225  0:017  - [15]: 'EFI-CUH'
+11:266  0:041        AddLoaderEntry for Volume Name=EFI-CUH, idx=8
+11:285  0:018        OSVersion= Build=
+11:303  0:017  OSIconName=unknown 
+11:321  0:018  OSName=unknown Title=
+11:340  0:018        IconName=unknown comma=-1 size=7
+11:357  0:017        Full=unknown
+11:376  0:018        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(3,GPT,2880F549-142A-46D4-AD9E-28D41DCC6A0C,0x132800,0xCE000)\EFI\BOOT\BOOTX64.efi'
+11:395  0:018       hiding entry: \EFI\BOOT\BOOTX64.efi
+11:414  0:019        Menu entry added at index 8
+11:432  0:018       hiding entry because DiskKind is DISK_KIND_EXTERNAL: \EFI\BOOT\BOOTX64.efi
+11:451  0:019  - [16]: 'EFI-WINUSB'
+11:487  0:035        AddLoaderEntry for Volume Name=EFI-WINUSB, idx=9
+11:508  0:020        OSVersion= Build=
+11:528  0:020  OSIconName=vista,win 
+11:569  0:040  OSName=vista Title=
+11:590  0:020        IconName=vista,win comma=5 size=9
+11:608  0:018        first=os_vista
+11:627  0:018        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(4,GPT,5187AF7C-F9F5-4BDE-9026-29D8ED05F26F,0x800800,0x32000)\EFI\microsoft\Boot\bootmgfw.efi'
+11:646  0:018        Menu entry added at index 9
+11:666  0:020        AddLoaderEntry for Volume Name=EFI-WINUSB, idx=10
+11:687  0:020        OSVersion= Build=
+11:708  0:021  OSIconName=unknown 
+11:727  0:019  OSName=unknown Title=
+11:744  0:017        IconName=unknown comma=-1 size=7
+11:762  0:017        Full=unknown
+11:781  0:019        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(4,GPT,5187AF7C-F9F5-4BDE-9026-29D8ED05F26F,0x800800,0x32000)\EFI\BOOT\BOOTX64.efi'
+11:799  0:017       hiding entry: \EFI\BOOT\BOOTX64.efi
+11:817  0:017        Menu entry added at index 10
+11:835  0:018       hiding entry because DiskKind is DISK_KIND_EXTERNAL: \EFI\BOOT\BOOTX64.efi
+11:856  0:021  - [21]: 'EFI'
+11:892  0:035    found entry debian,linux
+11:912  0:019        AddLoaderEntry for Volume Name=EFI, idx=11
+11:931  0:019        OSVersion= Build=
+11:949  0:017  assigned linux name icon linux
+11:968  0:019  OSIconName=linux 
+11:985  0:017  OSName=linux Title=
+12:004  0:018        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(9,GPT,75A6C17A-A228-4A17-A073-FE3C540074B0,0x42A72800,0x3B9800)\EFI\debian\grubx64.efi'
+12:022  0:018        Menu entry added at index 11
+12:041  0:019        AddLoaderEntry for Volume Name=EFI, idx=12
+12:059  0:017        OSVersion= Build=
+12:077  0:018  assigned linux name icon linux
+12:095  0:018  OSIconName=linux 
+12:115  0:019  OSName=linux Title=
+12:132  0:017        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(9,GPT,75A6C17A-A228-4A17-A073-FE3C540074B0,0x42A72800,0x3B9800)\EFI\debian\shimx64.efi'
+12:151  0:018        Menu entry added at index 12
+12:169  0:018        AddLoaderEntry for Volume Name=EFI, idx=13
+12:189  0:019        OSVersion= Build=
+12:207  0:018  OSIconName=unknown 
+12:225  0:018  OSName=unknown Title=
+12:244  0:018        IconName=unknown comma=-1 size=7
+12:264  0:019        Full=unknown
+12:281  0:017        Loader entry created for 'PciRoot(0x0)\Pci(0x1D,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\USB(0x0,0x0)\HD(9,GPT,75A6C17A-A228-4A17-A073-FE3C540074B0,0x42A72800,0x3B9800)\EFI\BOOT\BOOTX64.efi'
+12:300  0:018       hiding entry: \EFI\BOOT\BOOTX64.efi
+12:326  0:026        Menu entry added at index 13
+12:345  0:019       hiding entry because DiskKind is DISK_KIND_EXTERNAL: \EFI\BOOT\BOOTX64.efi
+12:364  0:019  - [35]: 'Preboot'
+12:400  0:036      ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE
+12:419  0:018      ApfsFileSystemUUID=20174E35-5362-49DB-BFE4-32732590F31C
+12:439  0:019      APFSTargetUUID=785485FF-0BD2-4989-B4E3-6F986B7212A4
+12:539  0:100        contentDetails name:MacOSX
+12:577  0:037        AddLoaderEntry for Volume Name=Preboot, idx=14
+12:627  0:049        OSVersion=15.8 Build=24H23
+12:646  0:018      hibernated: set as never
+12:664  0:018  OSIconName=sequoia,mac 
+12:683  0:019  OSName=sequoia Title=Boot Mac OS from MacOSX via Preboot
+12:702  0:018        IconName=sequoia,mac comma=7 size=11
+12:720  0:017        first=os_sequoia
+12:739  0:019        Loader entry created for 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)\785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi'
+12:757  0:017        Menu entry added at index 14
+12:775  0:018  - [36]: 'MacOSX - Data'
+12:814  0:038      ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE
+12:832  0:017      ApfsFileSystemUUID=785485FF-0BD2-4989-B4E3-6F986B7212A4
+12:850  0:018  - [37]: 'Recovery'
+12:891  0:041      ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE
+12:912  0:020      ApfsFileSystemUUID=DC8297B6-490D-4A88-AE74-5B0046FBC4AF
+12:931  0:019      APFSTargetUUID=785485FF-0BD2-4989-B4E3-6F986B7212A4
+12:950  0:018        contentDetails name:MacOSX
+13:012  0:062        AddLoaderEntry for Volume Name=Recovery, idx=15
+13:052  0:040        OSVersion=15.8 Build=24H23
+13:070  0:017  OSIconName=sequoia,mac 
+13:089  0:018  OSName=sequoia Title=Boot Mac OS Recovery for MacOSX via Recovery
+13:107  0:017        IconName=sequoia,mac comma=7 size=11
+13:125  0:018        first=os_sequoia
+13:144  0:018        Loader entry created for 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,B69782DC0D49884AAE745B0046FBC4AF)\785485FF-0BD2-4989-B4E3-6F986B7212A4\BaseSystem.dmg'
+13:164  0:019        Menu entry added at index 15
+13:181  0:017  - [38]: 'MacOSX'
+13:218  0:036      ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE
+13:237  0:018      ApfsFileSystemUUID=0A5B5C27-6A8B-4EAC-B003-71494AB7F9DA
+13:434  0:197  - [39]: 'Update'
+13:473  0:038      ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE
+13:491  0:018      ApfsFileSystemUUID=1F9301DC-9777-4774-959A-AAD04C886004
+13:508  0:017  - [40]: 'VM'
+13:545  0:036      ApfsContainerUUID=B70F0F2E-38F2-4994-B0F9-BCE6F8E32CDE
+13:563  0:018      ApfsFileSystemUUID=70E45BB6-3417-4BF0-B316-A40F804BADEA
+13:581  0:018  Entries list before ordering
+13:600  0:018      Entry 0 : Boot UEFI internal from EFI-REFIND  (hidden)
+13:617  0:017      Entry 1 : Boot UEFI internal from EFI-OC-I  (hidden)
+13:637  0:019      Entry 2 : Boot UEFI internal from EFI-CLOV-I  (hidden)
+13:656  0:019      Entry 3 : Boot Microsoft EFI Boot from EFI-WIN25H2 
+13:673  0:017      Entry 4 : Boot UEFI internal from EFI-WIN25H2  (hidden)
+13:691  0:017      Entry 5 : Boot Parrot Linux from EFI-Parrot 
+13:709  0:018      Entry 6 : Boot UEFI external from EFI-RUH  (hidden)
+13:727  0:017      Entry 7 : Boot UEFI external from EFI-OCUH  (hidden)
+13:747  0:020      Entry 8 : Boot UEFI external from EFI-CUH  (hidden)
+13:766  0:018      Entry 9 : Boot Microsoft EFI Boot from EFI-WINUSB 
+13:784  0:018      Entry 10 : Boot UEFI external from EFI-WINUSB  (hidden)
+13:805  0:021      Entry 11 : Boot Debian Linux from EFI 
+13:822  0:017      Entry 12 : Boot Debian Secure from EFI 
+13:841  0:018      Entry 13 : Boot UEFI external from EFI  (hidden)
+13:858  0:017      Entry 14 : Boot Mac OS from MacOSX via Preboot 
+13:877  0:018      Entry 15 : Boot Mac OS Recovery for MacOSX via Recovery 
+13:905  0:028  Entries list after ordering
+13:923  0:018    Entry 0 : Boot UEFI internal from EFI-REFIND  (hidden)
+13:941  0:017    Entry 1 : Boot UEFI internal from EFI-OC-I  (hidden)
+13:959  0:018    Entry 2 : Boot UEFI internal from EFI-CLOV-I  (hidden)
+13:978  0:018    Entry 3 : Boot Microsoft EFI Boot from EFI-WIN25H2 
+13:997  0:019    Entry 4 : Boot UEFI internal from EFI-WIN25H2  (hidden)
+14:015  0:017    Entry 5 : Boot Parrot Linux from EFI-Parrot 
+14:033  0:017    Entry 6 : Boot UEFI external from EFI-RUH  (hidden)
+14:051  0:018    Entry 7 : Boot UEFI external from EFI-OCUH  (hidden)
+14:068  0:017    Entry 8 : Boot UEFI external from EFI-CUH  (hidden)
+14:086  0:017    Entry 9 : Boot Microsoft EFI Boot from EFI-WINUSB 
+14:105  0:018    Entry 10 : Boot UEFI external from EFI-WINUSB  (hidden)
+14:123  0:017    Entry 11 : Boot Debian Linux from EFI 
+14:141  0:018    Entry 12 : Boot Debian Secure from EFI 
+14:159  0:018    Entry 13 : Boot UEFI external from EFI  (hidden)
+14:177  0:017    Entry 14 : Boot Mac OS from MacOSX via Preboot 
+14:195  0:018    Entry 15 : Boot Mac OS Recovery for MacOSX via Recovery 
+14:214  0:018  === [ AddCustomTool ] ===========================
+14:236  0:021  found tool \EFI\CLOVER\tools\Shell64U.efi
+14:253  0:017  Checking EFI partition Volume 1 for Clover
+14:271  0:018   Found Clover
+14:290  0:018  === [ GetEfiBootDeviceFromNvram ] ===============
+14:309  0:019  Got efi-boot-device-data size=264
+14:326  0:017   - efi-boot-device-data: PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)\785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi
+14:345  0:018    - Volume: 'PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)'
+14:363  0:017    - LoaderPath: '\785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi'
+14:381  0:017    - Guid = 4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E
+14:399  0:018  === [ FindStartupDiskVolume ] ===================
+14:417  0:018    - Volume: partition = PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)
+14:435  0:017     - searching for that partition and loader '\785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi'
+14:453  0:018    checking 'PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0x0,0x0)/HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)/VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)'
+14:472  0:018     '\785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi'
+14:490  0:017      - found entry 5. 'Boot Mac OS from MacOSX via Preboot', Volume 'Preboot', '\785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi'
+14:508  0:017  Boot redirected to Entry 5. 'Boot Mac OS from MacOSX via Preboot'
+14:527  0:019  BannerPlace at Clear Screen [0,0]
+14:760  0:233   Anime seems OK, init it
+14:801  0:040  GUI ready
+14:830  0:028  === Update Film ===
+14:847  0:017  FilmX=40000
+14:866  0:018  ID=1
+14:885  0:018  RunOnce=0
+14:905  0:019  NumFrames=24
+14:923  0:018  FrameTime=120
+14:941  0:018  Path=anime
+14:960  0:018  LastFrame=0
+14:960  0:000  
+16:721  1:760  BootVariable of the entry is empty
+16:743  0:022  === [ StartLoader ] =============================
+16:762  0:019  Starting PciRoot(0x0)\Pci(0x1F,0x2)\Sata(0x0,0x0,0x0)\HD(11,GPT,4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E,0x22C05000,0x17781008)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,354E17206253DB49BFE432732590F31C)\785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi
+16:781  0:018  Finally: ExternalClock=25MHz BusSpeed=99774kHz CPUFreq=2893MHz PIS: hw.busfrequency=100000000Hz
+16:825  0:044  Beginning OC
+16:844  0:018  OCST: Missing vault data, ignoring...
+16:863  0:019  AddKextsInArray from Other
+16:881  0:017  ->Extra kext: Other\AirportItlwm.kext (v.2.3.0)
+16:898  0:017  ->Extra kext: Other\AMFIPass.kext (v.1.4.1)
+16:917  0:018  ->Extra kext: Other\AppleALC.kext (v.1.9.7)
+16:934  0:017  ->Extra kext: Other\AppleIntelCPUPowerManagement.kext (v.222.0.0)
+16:952  0:017  ->Extra kext: Other\AppleIntelCPUPowerManagementClient.kext (v.222.0.0)
+16:971  0:019  ->Extra kext: Other\BlueToolFixup.kext (v.2.7.2)
+16:990  0:018  ->Extra kext: Other\BrightnessKeys.kext (v.1.0.3)
+17:008  0:018  ->Extra kext: Other\CryptexFixup.kext (v.1.0.5)
+17:026  0:017  ->Extra kext: Other\FeatureUnlock.kext (v.1.1.8)
+17:044  0:018  ->Extra kext: Other\CSLVFixup.kext (v.2.6.1)
+17:063  0:018  ->Extra kext: Other\ECEnabler.kext (v.1.0.6)
+17:080  0:017  ->Extra kext: Other\RSRHelper.kext (v.1.0.2)
+17:099  0:018  ->Extra kext: Other\HibernationFixup.kext (v.1.5.4)
+17:118  0:018  ->Extra kext: Other\IntelMausi.kext (v.1.0.8)
+17:138  0:019  ->Extra kext: Other\IO80211FamilyLegacy.kext (v.1200.12.2b1)
+17:155  0:017  ->Extra kext: Other\IOSkywalkFamily.kext (v.1.0)
+17:173  0:018  ->Extra kext: Other\Lilu.kext (v.1.7.2)
+17:191  0:018  ->Extra kext: Other\DisableLibraryValidation.kext (v.1)
+17:210  0:018  ->Extra kext: Other\SMCBatteryManager.kext (v.1.3.7)
+17:230  0:019  ->Extra kext: Other\SMCProcessor.kext (v.1.3.7)
+17:247  0:017  ->Extra kext: Other\SMCSuperIO.kext (v.1.3.7)
+17:265  0:017  ->Extra kext: Other\USBToolBox.kext (v.1.2.0)
+17:283  0:018  ->Extra kext: Other\UTBMap.kext (v.1.1)
+17:302  0:018  ->Extra kext: Other\VirtualSMC.kext (v.1.3.7)
+17:321  0:018  ->Extra kext: Other\VoodooPS2Controller.kext (v.2.3.7)
+17:339  0:017      |-- PlugIn kext: Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Trackpad.kext (v.2.3.7)
+17:357  0:018      |-- PlugIn kext: Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Keyboard.kext (v.2.3.7)
+17:376  0:018      |-- PlugIn kext: Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Mouse.kext (v.2.3.7)
+17:395  0:019      |-- PlugIn kext: Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooInput.kext (v.1.1.6)
+17:414  0:018  ->Extra kext: Other\WhateverGreen.kext (v.1.7.0)
+17:432  0:018  ->Extra kext: Other\RestrictEvents.kext (v.1.1.6)
+17:451  0:018  AddKextsInArray from Off
+17:471  0:019  AddKextsInArray from 15
+17:488  0:017  AddKextsInArray from 15_normal
+17:507  0:018  AddKextsInArray from 15.8
+17:525  0:018  AddKextsInArray from 15.8_normal
+17:544  0:018  AddKextsInArray from 15.8.0
+17:563  0:019  AddKextsInArray from 15.8.0_normal
+17:581  0:017  Bridge kext to OC : Path=Other\Lilu.kext
+17:603  0:021  Bridge kext to OC : Path=Other\VirtualSMC.kext
+17:623  0:020  Bridge kext to OC : Path=Other\WhateverGreen.kext
+17:642  0:019  Bridge kext to OC : Path=Other\IOSkywalkFamily.kext
+17:661  0:018  Bridge kext to OC : Path=Other\AppleALC.kext
+17:734  0:072  Bridge kext to OC : Path=Other\SMCProcessor.kext
+17:755  0:021  Bridge kext to OC : Path=Other\IO80211FamilyLegacy.kext
+17:787  0:032  Bridge kext to OC : Path=Other\SMCSuperIO.kext
+17:813  0:025  Bridge kext to OC : Path=Other\AirportItlwm.kext
+17:838  0:024  Bridge kext to OC : Path=Other\AMFIPass.kext
+17:861  0:022  Bridge kext to OC : Path=Other\AppleIntelCPUPowerManagement.kext
+17:882  0:021  Bridge kext to OC : Path=Other\AppleIntelCPUPowerManagementClient.kext
+17:904  0:021  Bridge kext to OC : Path=Other\BlueToolFixup.kext
+17:922  0:018  Bridge kext to OC : Path=Other\BrightnessKeys.kext
+17:944  0:022  Bridge kext to OC : Path=Other\CryptexFixup.kext
+17:967  0:022  Bridge kext to OC : Path=Other\FeatureUnlock.kext
+17:989  0:022  Bridge kext to OC : Path=Other\CSLVFixup.kext
+18:012  0:022  Bridge kext to OC : Path=Other\ECEnabler.kext
+18:030  0:018  Bridge kext to OC : Path=Other\RSRHelper.kext
+18:053  0:022  Bridge kext to OC : Path=Other\HibernationFixup.kext
+18:078  0:024  Bridge kext to OC : Path=Other\IntelMausi.kext
+18:104  0:025  Bridge kext to OC : Path=Other\DisableLibraryValidation.kext
+18:136  0:032  Bridge kext to OC : Path=Other\SMCBatteryManager.kext
+18:186  0:050  Bridge kext to OC : Path=Other\USBToolBox.kext
+18:205  0:018  Bridge kext to OC : Path=Other\UTBMap.kext
+18:227  0:021  Bridge kext to OC : Path=Other\VoodooPS2Controller.kext
+18:245  0:018  Bridge kext to OC : Path=Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Trackpad.kext
+18:266  0:020  Bridge kext to OC : Path=Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Keyboard.kext
+18:285  0:019  Bridge kext to OC : Path=Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Mouse.kext
+18:304  0:018  Bridge kext to OC : Path=Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooInput.kext
+18:326  0:021  Bridge kext to OC : Path=Other\RestrictEvents.kext
+18:361  0:034  Start 'OpenRuntime.efi' : Status Success
+18:379  0:018  OC: OcMiscEarlyInit...
+18:397  0:017  OC: Got 0 drivers
+18:415  0:017  OC: OpenCore DBG-102-2026-08-31 is loading in Optional mode (0/0)...
+18:433  0:018  OC: OcMiscEarlyInit=Success
+18:452  0:018  OC: OcMiscMiddleInit...
+18:471  0:019  UEFI Quirks
+18:489  0:018  EBSD 0  TST 0  AHS 0  DSP 0  EVA 0  EV 0  FUS 0  IIFR 0  RGB -1  RUPR 0  RUO 0  ROR 0  RBVR 0  SRP 0  UFC 0  FOWF 0
+18:508  0:018  Kernel quirks
+18:525  0:017  ACPCL 1 AXCL 1 AXEM 0 AXFB 0 CSG 0 DIM 0 DLJ 1 DRC 1 DPM 0 EBTFF 0 EDI 0 FAI 0 IPBS 0 LKP 0 PNKD 0 PTKP 1 TPD 1 XPL 0 PCC 0
+18:543  0:018  OC: StorageHandle 0 with  LauncherOption pointing to 
+18:563  0:019  OC: OcLoadUefiSupport...
+18:580  0:017  OC: Failed to install cpuio/pcirootbridgeio overrides
+18:599  0:018  OcOSInfoInstallProtocol
+18:618  0:018  OCRTC: OcAppleRtcRamInstallProtocol
+18:637  0:019  OCRTC: Wake log is 0x00 0x00   0 0x00
+18:654  0:017  OcAppleFbInfoInstallProtocol
+18:673  0:018  OcAppleEg2InfoInstallProtocol
+18:692  0:018  OC: Loading Apple Secure Boot with Disabled (level 0)
+18:710  0:018  OCABC: ALRBL 0 RTDFRG 1 DEVMMIO 0 NOSU 0 NOVRWR 0 NOSB 0 FBSIG 0 NOHBMAP 0 SMSLIDE 1 WRUNPROT 1
+18:729  0:018  OCABC: FEXITBS 0 PRMRG 0 CSLIDE 1 MSLIDE 0 PRSRV 0 RBMAP 0 VMAP 1 APPLOS 0 RTPERMS 0 ARBAR 0 RBIO 0
+18:747  0:017  OCABC: Got rendezvous with OpenRuntime r12
+18:765  0:018  OCABC: MAT support is 0
+18:784  0:018  OC: RequestBootVarRouting 0
+18:804  0:019  OCDM: Found 0x2001F/0x2001F UEFI version (376 bytes, 0 rebuilding to 376) gST B659EF18 gBS 9F7E8290 gBS->CreateEventEx 9F7EC328 &gBS A2341260
+18:822  0:018  OC: Got 0 drivers
+18:840  0:018  OCC: GOP exists on ConsoleOutHandle and has 5 modes
+18:859  0:018  OC: Requested resolution is 1920x1080@0 (max: 0, force: 0) from 1920x1080
+18:879  0:019  OCC: Using builtin text renderer with 1 scale
+18:898  0:019  OCC: Install console control (A232A9D0/A0440698/0), current - Success
+18:916  0:018  OCC: Setup ASCII Output - Success
+18:934  0:017  OC: Requested console mode is 0x0 (max: 0) from 
+18:952  0:018  OC: OcMiscLateInit...
+18:971  0:019  OC: Invalid HibernateMode: 
+18:988  0:017  OC: Translated HibernateMode  to 0
+19:007  0:018  OC: Hibernation activation - Invalid Parameter, hibernation wake - no
+19:025  0:017  OC: Panic log does not exist
+19:044  0:018  OC: OcLoadKernelSupport...
+19:062  0:017  OC: All green, starting boot management...
+19:079  0:017  OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+19:140  0:060  OCB: Arch filtering A483A018(723512)->A483A018(723512) caps 0 - Success
+19:159  0:018  ImageHandle = a6303118
+19:297  0:137  GetOSVersion: 15.8 (24H23)
+19:337  0:039  Filtering KextPatches:
+19:355  0:018   - [00]: Disable FileVault :: BinPatch :: [OS: 15.8 | MatchOS: 14.x,15.x | MatchBuild: All]
+19:373  0:018   check MatchOS 14.x
+19:392  0:018  
+19:392  0:000   check MatchOS 15.x
+19:412  0:019   ==> allowed
+19:430  0:018  Filtering KextsToBlock:
+19:448  0:018   - [00]: Allow IOSkywalk Downgrade :: [OS: 15.8 | MatchOS: 14.x,15.x,26.x] ==> allowed
+19:467  0:019  Will not patch boot.efi
+19:487  0:019  actualOS_icon=sequoia,mac
+19:505  0:018  actualOSName=sequoia
+19:523  0:018  search SMBIOS for sequoia
+19:549  0:025  smbios[1]:SMBIOS
+19:567  0:017  BiosVersion: MBP161.88Z.F000.B00.2303040347
+19:585  0:018  BiosReleaseDate: 03/04/2023
+19:604  0:019  EfiVersion: 1968.100.17.0.0
+19:621  0:017  SMBIOS reloaded with model MacBookPro16,1
+19:640  0:018  boardID from gSettings: Mac-E1008331FDC96864
+19:659  0:018  chosen SMBIOS auto
+19:679  0:019  Set FakeCPUID: 0x0
+19:696  0:017  Bridge com.apple.filesystems.apfs patch to OC : Disable FileVault
+19:714  0:018  === [ PatchSmbios ] =============================
+19:733  0:018  UpdateSmbiosString : BiosVersion=EfiVersion=1968.100.17.0.0
+19:750  0:017  UpdateSmbiosString : ReleaseDate=03/04/2023
+19:768  0:018  void PatchTableType1(const SmbiosInjectedSettings&) : UpdateSmbiosString ProductName=MacBookPro16,1
+19:787  0:018  void PatchTableType2(const SmbiosInjectedSettings&) : UpdateSmbiosString ProductName=BoardNumber=Mac-E1008331FDC96864
+19:805  0:017  void PatchTableType2(const SmbiosInjectedSettings&) : UpdateSmbiosString Version=BoardVersion=MacBookPro16,1
+19:823  0:017  insert table 9 for dev 0:0
+19:842  0:019  insert table 9 for dev 19:0
+19:862  0:019  insert table 9 for dev 0:0
+19:880  0:018  Injecting user memory modules to SMBIOS
+19:898  0:018  Channels: 2
+19:917  0:018  Interleave: 0 2 1 3
+20:026  0:109  user SMBIOS data:
+20:045  0:018    smbiosSettings.RamSlotCount=4
+20:063  0:018    smbiosSettings.Memory.SlotCounts=4
+20:081  0:018    smbiosSettings.Memory.UserChannels=2
+20:099  0:018    smbiosSettings.Memory slot 0
+20:117  0:017      smbiosSettings.Memory[0].ModuleSize=4096
+20:135  0:017      smbiosSettings.Memory[0].Type=24
+20:154  0:019      smbiosSettings.Memory[0].Frequency=1600
+20:171  0:017      smbiosSettings.Memory[0].Vendor=Samsung
+20:190  0:018      smbiosSettings.Memory[0].PartNo=M471B5273CH0-CK0
+20:208  0:018      smbiosSettings.Memory[0].SerialNo=96ABDD72
+20:226  0:018    smbiosSettings.Memory slot 1 is not defined
+20:245  0:018    smbiosSettings.Memory slot 2
+20:263  0:017      smbiosSettings.Memory[2].ModuleSize=4096
+20:281  0:017      smbiosSettings.Memory[2].Type=24
+20:299  0:018      smbiosSettings.Memory[2].Frequency=1600
+20:317  0:017      smbiosSettings.Memory[2].Vendor=Kingston
+20:335  0:018      smbiosSettings.Memory[2].PartNo=9905469-055.A00LF
+20:354  0:019      smbiosSettings.Memory[2].SerialNo=531484B7
+20:371  0:017    smbiosSettings.Memory slot 3 is not defined
+20:390  0:018  BANK 0 DIMM0 1600MHz 4096MB(Ext:0MB)
+20:409  0:018  BANK 1 DIMM0 1600MHz 4096MB(Ext:0MB)
+20:428  0:019  BANK 0 DIMM1 EMPTY
+20:448  0:019  BANK 1 DIMM1 EMPTY
+20:465  0:017  mTotalSystemMemory = 8192
+20:485  0:019  NumberOfMemoryDevices = 4
+20:504  0:019  Table 131 is present, CPUType=1
+20:521  0:017  Change to: 602
+20:540  0:018  Table 133 is present, PlatformFeature=494748494F484B01
+20:559  0:018  Change to: 12
+20:578  0:019  === [ PatchACPI ] ===============================
+20:596  0:018  Xsdt reallocation done
+20:615  0:018  old FADT length=10C
+20:634  0:018   SignatureFixup: 0x0 -> 0x0
+20:654  0:020  Found OperationRegion(MNVS, SystemMemory, B6F9D018, ...)
+20:674  0:020  Found OperationRegion(GNVS, SystemMemory, B6F6CE18, ...)
+20:693  0:018  Found OperationRegion(TMMB, SystemMemory, FED40000, ...)
+20:714  0:021  Apply DsdtFixMask=0x10460054
+20:733  0:019  === [ FixBiosDsdt ] =============================
+20:754  0:020  Patching DSDT:
+20:774  0:020   - [HPET _STA to XSTA Rename]: pattern 1F5F5354, patched at: [4258]
+20:866  0:092   - [HPET _CRS to XCRS Rename]: pattern 205F4352, patched at: [428F]
+20:959  0:092   - [PIC IRQ 2 Patch]: pattern 22040079, patched at: [4219]
+21:053  0:094   - [TIMR IRQ 0 Patch]: pattern 22010079, patched at: [4240]
+21:146  0:093   - [RTC IRQ 8 Patch]: pattern 22000179, patched at: [4353]
+21:237  0:090   - [_OSI to XOSI rename - requires SSDT-XOSI.aml]: pattern 5F4F5349, patched at: [A17, 4, 29, 1D, 1D, 19, 19, 19, 12]
+21:629  0:392   - [EC0 _STA to XSTA Rename (Required for SSDT-EC)]: disabled
+21:670  0:040  found RTC Length not match, Maybe will cause CMOS reset, will patch it.
+21:698  0:028  found RTC had IRQNoFlag will move -3 bytes
+21:717  0:019  found PIC had IRQNoFlag will move -3 bytes
+21:735  0:018  Start HPET Fix
+21:754  0:018   deleting device CRT_
+21:774  0:019   deleting device DVI_
+21:794  0:020   deleting device SPKR
+21:813  0:018   deleting device ECP_
+21:833  0:019   deleting device LPT_
+21:853  0:020   deleting device FDC0
+21:873  0:019   deleting device ECP1
+21:893  0:020   deleting device LPT1
+21:913  0:019   deleting device FDC_
+21:934  0:020  PreCleanup XSDT: count=21, length=204
+21:952  0:018  PreCleanup XSDT, corrected XSDT: count=21, length=204
+21:971  0:018  === [ ACPIPatchedAML ] ==========================
+21:989  0:018  AutoMerge pass 1
+22:008  0:018  Sorted
+22:028  0:019  Inserting table[0]:SSDT-PM.aml from \EFI\CLOVER\ACPI\patched: ignore on pass 1
+22:064  0:036  Inserting table[1]:SSDT-PS2K.aml from \EFI\CLOVER\ACPI\patched: ignore on pass 1
+22:099  0:035  Inserting table[2]:SSDT-HPET.aml from \EFI\CLOVER\ACPI\patched: ignore on pass 1
+22:137  0:037  Inserting table[3]:SSDT-EC.aml from \EFI\CLOVER\ACPI\patched: ignore on pass 1
+22:175  0:038  Inserting table[4]:SSDT-PNLF.aml from \EFI\CLOVER\ACPI\patched: ignore on pass 1
+22:212  0:037  Inserting table[5]:SSDT-XOSI.aml from \EFI\CLOVER\ACPI\patched: ignore on pass 1
+22:263  0:051  Inserting table[6]:SSDT-SBUS-MCHC.aml from \EFI\CLOVER\ACPI\patched: ignore on pass 1
+22:299  0:035  Inserting table[7]:SSDT-ALS0.aml from \EFI\CLOVER\ACPI\patched: ignore on pass 1
+22:336  0:037  === [ ACPIDropTables ] ==========================
+22:354  0:017  Drop tables from XSDT, SIGN=SSDT TableID=Cpu0Ist Length=3253
+22:373  0:018   Table[15]: SSDT  Cpu0Ist  3253 dropped
+22:391  0:018  Drop tables from XSDT, SIGN=SSDT TableID=CpuPm Length=2691
+22:411  0:019   Table[16]: SSDT  CpuPm  2691 dropped
+22:428  0:017  Drop tables from XSDT, SIGN=DMAR TableID=SNB  Length=184
+22:447  0:018  Patching SSDTs: 7 patches each
+22:465  0:018   pattern 1F5F5354, bin not found / already patched!
+22:501  0:035   pattern 205F4352, bin not found / already patched!
+22:537  0:036   pattern 22040079, bin not found / already patched!
+22:575  0:037   pattern 22010079, bin not found / already patched!
+22:614  0:038   pattern 22000179, bin not found / already patched!
+22:651  0:037   pattern 5F4F5349, bin not found / already patched!
+22:687  0:036  Patching SSDTs: 7 patches each
+22:706  0:018   pattern 1F5F5354, bin not found / already patched!
+22:744  0:037   pattern 205F4352, bin not found / already patched!
+22:780  0:036   pattern 22040079, bin not found / already patched!
+22:816  0:035   pattern 22010079, bin not found / already patched!
+22:853  0:037   pattern 22000179, bin not found / already patched!
+22:890  0:036   pattern 5F4F5349, bin not found / already patched!
+22:926  0:035  Patching SSDTs: 7 patches each
+22:945  0:018   pattern 1F5F5354, bin not found / already patched!
+22:981  0:036   pattern 205F4352, bin not found / already patched!
+23:019  0:038   pattern 22040079, bin not found / already patched!
+23:055  0:035   pattern 22010079, bin not found / already patched!
+23:091  0:035   pattern 22000179, bin not found / already patched!
+23:128  0:037   pattern 5F4F5349, bin not found / already patched!
+23:164  0:036  Patching SSDTs: 7 patches each
+23:183  0:018   pattern 1F5F5354, bin not found / already patched!
+23:220  0:036   pattern 205F4352, bin not found / already patched!
+23:258  0:038   pattern 22040079, bin not found / already patched!
+23:295  0:037   pattern 22010079, bin not found / already patched!
+23:333  0:037   pattern 22000179, bin not found / already patched!
+23:370  0:037   pattern 5F4F5349, bin not found / already patched!
+23:407  0:036  Found OperationRegion(FFSN, SystemMemory, B6F58F18, ...)
+23:426  0:018  === [ ACPIPatchedAML ] ==========================
+23:444  0:018  AutoMerge pass 2
+23:463  0:019  Sorted
+23:483  0:020  Inserting table[0]:SSDT-PM.aml from \EFI\CLOVER\ACPI\patched: size=1827 ... Success
+23:572  0:088  Inserting table[1]:SSDT-PS2K.aml from \EFI\CLOVER\ACPI\patched: size=239 ... Success
+23:636  0:064  Inserting table[2]:SSDT-HPET.aml from \EFI\CLOVER\ACPI\patched: size=318 ... Success
+23:691  0:054  Inserting table[3]:SSDT-EC.aml from \EFI\CLOVER\ACPI\patched: size=141 ... Success
+23:749  0:058  Inserting table[4]:SSDT-PNLF.aml from \EFI\CLOVER\ACPI\patched: size=112 ... Success
+23:811  0:061  Inserting table[5]:SSDT-XOSI.aml from \EFI\CLOVER\ACPI\patched: size=209 ... Success
+23:870  0:059  Inserting table[6]:SSDT-SBUS-MCHC.aml from \EFI\CLOVER\ACPI\patched: size=194 ... Success
+23:924  0:054  Inserting table[7]:SSDT-ALS0.aml from \EFI\CLOVER\ACPI\patched: size=132 ... Success
+23:978  0:054  ApicCPUNum=4
+23:996  0:017  Cleanup XSDT: count=29, length=268
+24:015  0:018  corrected XSDT count=27, length=252
+24:032  0:017  === [ RestSetup macOS ] =========================
+24:050  0:017  add device: PciRoot(0x0)/Pci(0x1B,0x0)
+24:069  0:019     Add key=AAPL,slot-name valuelen=16
+24:087  0:017     Add key=AFGLowPowerState valuelen=4
+24:105  0:018     Add key=device_type valuelen=13
+24:124  0:019     Add key=hda-gfx valuelen=10
+24:144  0:019     Add key=layout-id valuelen=4
+24:162  0:018     Add key=model valuelen=17
+24:180  0:017  add device: PciRoot(0x0)/Pci(0x1F,0x2)
+24:198  0:018     Add key=built-in valuelen=4
+24:217  0:019     Add key=device_type valuelen=16
+24:236  0:019     Add key=pci-aspm-default valuelen=4
+24:253  0:017  add device: PciRoot(0x0)/Pci(0x2,0x0)
+24:271  0:017     Add key=AAPL,ig-platform-id valuelen=4
+24:291  0:019     Add key=AAPL,slot-name valuelen=9
+24:310  0:019     Add key=device-id valuelen=4
+24:328  0:018     Add key=enable-backlight-registers-fix valuelen=4
+24:347  0:018     Add key=enable-backlight-smoother valuelen=4
+24:366  0:018     Add key=framebuffer-patch-enable valuelen=4
+24:385  0:019     Add key=framebuffer-memorycount valuelen=4
+24:403  0:017     Add key=framebuffer-pipecount valuelen=4
+24:422  0:019     Add key=framebuffer-portcount valuelen=4
+24:441  0:018     Add key=framebuffer-stolenmem valuelen=4
+24:461  0:020     Add key=framebuffer-unifiedmem valuelen=4
+24:480  0:018     Add key=framebuffer-con0-enable valuelen=4
+24:498  0:018     Add key=framebuffer-con0-type valuelen=4
+24:515  0:017     Add key=framebuffer-con1-enable valuelen=4
+24:535  0:019     Add key=framebuffer-con1-alldata valuelen=36
+24:553  0:017     Add key=hda-gfx valuelen=10
+24:571  0:018     Add key=model valuelen=23
+24:591  0:019  Intel GFX injection not set
+24:611  0:020  NVidia GFX injection not set
+24:632  0:021  stringlength = 4718
+24:652  0:020  CurrentMode: Width=1920 Height=1080
+24:671  0:018  SetNvramVariable (system-id, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x2, 16): -> writing new (Success)
+24:707  0:035  SetNvramVariable (MLB, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 17): -> writing new (Success)
+24:744  0:037  SetNvramVariable (ROM, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 6): -> writing new (Success)
+24:780  0:036  SetNvramVariable (FirmwareFeatures, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 4): -> writing new (Success)
+24:818  0:038  SetNvramVariable (FirmwareFeaturesMask, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 4): -> writing new (Success)
+24:855  0:036  SetNvramVariable (ExtendedFirmwareFeatures, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 8): -> writing new (Success)
+24:892  0:037  SetNvramVariable (ExtendedFirmwareFeaturesMask, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 8): -> writing new (Success)
+24:929  0:036  AddNvramVariable (HW_BID, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 20): -> writing new (Success)
+24:966  0:037  AddNvramVariable (security-mode, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 5): -> already exists, abort
+25:003  0:037  AddNvramVariable (backlight-level, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 2): -> already exists, abort
+25:043  0:039  DeleteNvramVariable (DefaultBackgroundColor, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14):
+25:063  0:020  DeleteNvramVariable (UIScale, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14):
+25:082  0:019  DeleteNvramVariable (EFILoginHiDPI, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+25:108  0:025  SetNvramVariable (flagstate, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 32): exists(0x7, 32), equal -> not writing again.
+25:163  0:055  SetNvramVariable (csr-active-config, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 4): exists(0x7, 4), equal -> not writing again.
+25:219  0:055  DeleteNvramVariable (BridgeOSHardwareModel, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14):
+25:238  0:018  DeleteNvramVariable (bootercfg, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+25:257  0:019  DeleteNvramVariable (nvda_drv, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+25:275  0:018  DeleteNvramVariable (recovery-boot-mode, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+25:294  0:018  AddNvramVariable (wake-failure, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 5): -> already exists, abort
+25:330  0:036  AddNvramVariable (bluetoothInternalControllerInfo, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 14): -> already exists, abort
+25:368  0:038  AddNvramVariable (bluetoothExternalDongleFailed, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 1): -> already exists, abort
+25:406  0:037  DeleteNvramVariable (opencore-version, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+25:425  0:019  DeleteNvramVariable (ApBoardID, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:443  0:017  DeleteNvramVariable (ApSecurityDomain, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:462  0:018  DeleteNvramVariable (ApProductionStatus, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:480  0:018  DeleteNvramVariable (ApSecurityMode, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:499  0:019  DeleteNvramVariable (EffectiveProductionStatus, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:519  0:019  DeleteNvramVariable (EffectiveSecurityMode, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:536  0:017  DeleteNvramVariable (CertificateEpoch, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:555  0:019  DeleteNvramVariable (MixNMatchPreventionStatus, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:574  0:018  DeleteNvramVariable (CryptoDigestMethod, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:593  0:019  DeleteNvramVariable (InternalUseOnlyUnit, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:612  0:018  DeleteNvramVariable (ApECID, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:629  0:017  DeleteNvramVariable (HardwareModel, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+25:649  0:019  Use origin smbios table type 1 guid.
+25:670  0:021  SetStartupDiskVolume:
+25:689  0:018    * Volume: 'Preboot'
+25:707  0:017    * LoaderPath: '\785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi'
+25:725  0:018    * DevPath: Preboot
+25:743  0:017    * EFI_GUID = 4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E
+25:761  0:018  SetNvramVariable (efi-boot-device-data, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 264): exists(0x7, 264), equal -> not writing again.
+25:818  0:056    * efi-boot-device: <array><dict><key>IOMatch</key><dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>UUID</key><string>4EF46FA6-A29C-4368-AD78-AB9CFA0F0F9E</string></dict></dict></dict></array>
+25:836  0:018  SetNvramVariable (efi-boot-device, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 216): exists(0x7, 216), equal -> not writing again.
+25:893  0:056  Custom boot screen not used because entry has unset use graphics
+25:911  0:017  DeleteNvramVariable (IOHibernateRTCVariables, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+25:929  0:018  DeleteNvramVariable (boot-image, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+25:950  0:021  UEFI Quirks
+25:969  0:018  EBSD 0  TST 0  AHS 0  DSP 0  EVA 0  EV 0  FUS 0  IIFR 0  RGB -1  RUPR 0  RUO 0  ROR 0  RBVR 0  SRP 0  UFC 0  FOWF 0
+25:987  0:018  Kernel quirks
+26:008  0:020  ACPCL 1 AXCL 1 AXEM 0 AXFB 0 CSG 0 DIM 0 DLJ 1 DRC 1 DPM 0 EBTFF 0 EDI 0 FAI 0 IPBS 0 LKP 0 PNKD 0 PTKP 1 TPD 1 XPL 0 PCC 0
+26:028  0:020  Closing log
+26:052  0:023  OCABC: Patching safe mode sur-2 at off AD02
+26:070  0:017  OCDM: RBAR using PciIo
+26:088  0:018  OCDM: Setting RBAR to 0 inc 0 on 6/21
+26:107  0:018  OCDM: Capability I/O error - Unsupported
+26:126  0:019  OCDM: RBAR is unsupported by device - Device Error
+26:159  0:032  OCDM: Setting RBAR to 0 inc 0 on 12/21
+26:178  0:018  OCDM: RBAR is unsupported by device - Not Found
+26:197  0:019  OC: Supported boot capabilities 4
+26:215  0:017  OCABC: Only 99/256 slide values are usable!
+26:245  0:030  OCABC: Valid slides - 1-99
+26:269  0:023  OCOS: OS set: <null> macOS 11.0
+26:288  0:018  OCOS: OS set: Apple Inc. macOS 11.0
+26:307  0:019  OCOS: Should use black background
+26:330  0:022  OC: Opening file System\Library\Kernels\kernel with 1 mode gave - Not Found
+26:349  0:018  OC: Opening file \785485FF-0BD2-4989-B4E3-6F986B7212A4 with 1 mode gave - Success
+26:368  0:019  OC: Opening file \785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\com.apple.Boot.plist with 1 mode gave - Not Found
+26:425  0:056  OC: Opening file Library\Preferences\SystemConfiguration\com.apple.Boot.plist with 1 mode gave - Success
+26:465  0:039  OC: Opening file \785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\PlatformSupport.plist with 1 mode gave - Success
+26:496  0:031  OC: Opening file System\Library\Caches\com.apple.corestorage\EncryptedRoot.plist.wipekey with 1 mode gave - Success
+26:559  0:063  OC: Opening file \785485FF-0BD2-4989-B4E3-6F986B7212A4\System\Library\CoreServices\boot.efi with 1 mode gave - Success
+26:637  0:077  OC: Opening file boot\System\Library\KernelCollections\BootKernelExtensions.kc.development with 1 mode gave - Not Found
+26:659  0:021  OC: Opening file boot\System\Library\KernelCollections\BootKernelExtensions.kc with 1 mode gave - Success
+26:679  0:020  OC: Load and reserve Kext Other\Lilu.kext
+26:731  0:051  OC: Load and reserve Kext Other\VirtualSMC.kext
+26:763  0:032  OC: Load and reserve Kext Other\WhateverGreen.kext
+26:810  0:046  OC: Load and reserve Kext Other\IOSkywalkFamily.kext
+26:872  0:061  OC: Load and reserve Kext Other\AppleALC.kext
+27:098  0:226  OC: Load and reserve Kext Other\SMCProcessor.kext
+27:121  0:023  OC: Load and reserve Kext Other\IO80211FamilyLegacy.kext
+27:247  0:126  OC: Load and reserve Kext Other\SMCSuperIO.kext
+27:273  0:025  OC: Load and reserve Kext Other\AirportItlwm.kext
+28:080  0:807  OC: Load and reserve Kext Other\AMFIPass.kext
+28:145  0:064  OC: Load and reserve Kext Other\AppleIntelCPUPowerManagement.kext
+28:176  0:031  OC: Load and reserve Kext Other\AppleIntelCPUPowerManagementClient.kext
+28:198  0:021  OC: Load and reserve Kext Other\BlueToolFixup.kext
+28:220  0:021  OC: Load and reserve Kext Other\BrightnessKeys.kext
+28:243  0:022  OC: Load and reserve Kext Other\CryptexFixup.kext
+28:264  0:021  OC: Load and reserve Kext Other\FeatureUnlock.kext
+28:286  0:022  OC: Load and reserve Kext Other\CSLVFixup.kext
+28:308  0:022  OC: Load and reserve Kext Other\ECEnabler.kext
+28:326  0:017  OC: Load and reserve Kext Other\RSRHelper.kext
+28:348  0:022  OC: Load and reserve Kext Other\HibernationFixup.kext
+28:378  0:029  OC: Load and reserve Kext Other\IntelMausi.kext
+28:406  0:028  OC: Load and reserve Kext Other\DisableLibraryValidation.kext
+28:429  0:022  OC: Load and reserve Kext Other\SMCBatteryManager.kext
+28:464  0:035  OC: Load and reserve Kext Other\USBToolBox.kext
+28:490  0:025  OC: Load and reserve Kext Other\UTBMap.kext
+28:508  0:018  OC: Load and reserve Kext Other\VoodooPS2Controller.kext
+28:532  0:023  OC: Load and reserve Kext Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Trackpad.kext
+28:557  0:024  OC: Load and reserve Kext Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Keyboard.kext
+28:579  0:022  OC: Load and reserve Kext Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Mouse.kext
+28:597  0:018  OC: Load and reserve Kext Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooInput.kext
+28:616  0:018  OC: Load and reserve Kext Other\RestrictEvents.kext
+28:637  0:021  OC: Kext reservation size info 597000 exe 177C000
+28:657  0:019  OC: Trying 64-bit XNU hook on boot\System\Library\KernelCollections\BootKernelExtensions.kc
+28:709  0:052  OCAK: Found 64-bit Mach-O compressed 0 offset 0 size 0
+28:735  0:025  OCAK: Determined kernel size is 66125824 bytes
+29:566  0:831  OC: Result of 64-bit XNU hook on boot\System\Library\KernelCollections\BootKernelExtensions.kc (00000000) is Success
+29:667  0:100  OCAK: Read kernel version 24.6.0 (240600)
+29:688  0:021  OCAK: 64-bit patcher base 0xFFFFFF8000200000 kmod 0x0 file 0x0
+29:711  0:022  OCAK: Zeroing _xcpm_core_scope_msrs 0xE2 applicable CPUs (76)
+29:728  0:017  OCAK: Zeroing _xcpm_core_scope_msrs 0xE2 applicable CPUs (406416)
+29:747  0:018  OCAK: Zeroing _xcpm_core_scope_msrs 0xE2 applicable CPUs (16384)
+29:768  0:021  Replace B9E20000000F30 by B9E20000009090 at ofs:367
+30:093  0:325  Replace B9E20000000F30 by B9E20000009090 at ofs:3D2
+30:408  0:314  OCAK: 64-bit XcpmCfgLockRel replace count - 2
+30:426  0:018  OCAK: [OK] Success XcpmCfgLock patch
+30:445  0:018  OCAK: 64-bit PowerStateTimeout replace count - 0
+30:463  0:018  OCAK: No inline power state patch - Not Found, trying fallback
+30:574  0:111  Replace 636F6D2E6170706C6500 by 6E6F742E6170706C6500 at ofs:AA889F
+31:003  0:428  OCAK: 64-bit PowerStateTimeout replace count - 1
+31:021  0:017  OCAK: [OK] Patch success power state
+31:042  0:021  OCAK: CurrFreeCall E8 D7 76 AC FF FFAC76D7
+31:061  0:019  OCAK: CurrFreeCall E8 AD 76 AC FF FFAC76AD
+31:079  0:018  OCAK: CurrFreeCall E8 73 76 AC FF FFAC7673
+31:097  0:017  OCAK: CurrFreeCall E8 44 75 AC FF FFAC7544
+31:115  0:017  OCAK: [OK] Found jettisoning fileset
+31:183  0:067  OCAK: Patching invalid size 33FF8 with 169D000 for com.apple.iokit.IOSkywalkFamily
+31:204  0:020  OCAK: com.apple.iokit.IOSkywalkFamily got KXLD 0 0
+31:224  0:020  OCAK: Excluding com.apple.iokit.IOSkywalkFamily - VirtualBase FFFFFF8002973000, MaxSize 46000
+31:246  0:021  OCAK: Found kext com.apple.iokit.IOSkywalkFamily (A62F5E18) from link A62F5E20 to drop
+31:264  0:018  OCAK: Erasing com.apple.iokit.IOSkywalkFamily from prelinked kext under dict index 3, plist A3108318, plist index 166
+31:282  0:017  OC: Prelinked blocker (Exclude) result 0 for com.apple.iokit.IOSkywalkFamily (Allow IOSkywalk Downgrade) - Success
+31:301  0:019  OCAK: as.vit9696.Lilu got KXLD 0 0
+31:318  0:017  OCAK: Requesting __LINKEDIT for as.vit9696.Lilu - 9B74C438 at 3F13000
+31:337  0:018  OCAK: Requesting SymbolTable for as.vit9696.Lilu - 551
+31:356  0:018  OCAK: Requesting __LINKEDIT for __kernel__ - 97844688 at 0
+31:375  0:019  OCAK: Requesting SymbolTable for __kernel__ - 23429
+31:444  0:068  OCAK: Local relocs 689 on FFFFFF8004013000
+31:462  0:018  OC: Prelinked injection Other\Lilu.kext () - Success
+31:483  0:020  OCAK: as.vit9696.VirtualSMC got KXLD 0 0
+31:501  0:017  OCAK: Requesting __LINKEDIT for as.vit9696.VirtualSMC - 9B77D438 at 3F44000
+31:519  0:018  OCAK: Requesting SymbolTable for as.vit9696.VirtualSMC - 453
+31:537  0:018  OCAK: Requesting SymbolTable for as.vit9696.Lilu - 159
+31:560  0:022  OCAK: Patching invalid size 2000 with 1C0C000 for com.apple.iokit.IOACPIFamily
+31:579  0:018  OCAK: com.apple.iokit.IOACPIFamily got KXLD 0 0
+31:597  0:018  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOACPIFamily - 99B40518 at 2307000
+31:616  0:019  OCAK: Requesting SymbolTable for com.apple.iokit.IOACPIFamily - 544
+31:647  0:030  OCAK: Local relocs 515 on FFFFFF8004044000
+31:666  0:019  OC: Prelinked injection Other\VirtualSMC.kext () - Success
+31:685  0:018  OCAK: as.vit9696.WhateverGreen got KXLD 0 0
+31:703  0:018  OCAK: Requesting __LINKEDIT for as.vit9696.WhateverGreen - 9B7953E8 at 3F5C000
+31:722  0:018  OCAK: Requesting SymbolTable for as.vit9696.WhateverGreen - 445
+31:744  0:021  OCAK: Patching invalid size 35000 with 178D000 for com.apple.iokit.IOPCIFamily
+31:763  0:018  OCAK: com.apple.iokit.IOPCIFamily got KXLD 0 0
+31:780  0:017  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOPCIFamily - 99FBF518 at 2786000
+31:798  0:018  OCAK: Requesting SymbolTable for com.apple.iokit.IOPCIFamily - 1583
+31:837  0:038  OCAK: Local relocs 1940 on FFFFFF800405C000
+31:857  0:020  OC: Prelinked injection Other\WhateverGreen.kext () - Success
+31:876  0:018  OCAK: com.apple.iokit.IOSkywalkFamily got KXLD 0 0
+31:903  0:026  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOSkywalkFamily - 9B8184D0 at 3FDF000
+31:921  0:018  OCAK: Requesting SymbolTable for com.apple.iokit.IOSkywalkFamily - 11261
+31:942  0:020  OCAK: Patching invalid size 5000 with 1794000 for com.apple.driver.mDNSOffloadUserClient
+31:960  0:018  OCAK: com.apple.driver.mDNSOffloadUserClient got KXLD 0 0
+31:978  0:018  OCAK: Requesting __LINKEDIT for com.apple.driver.mDNSOffloadUserClient - 99FB84D0 at 277F000
+31:997  0:018  OCAK: Requesting SymbolTable for com.apple.driver.mDNSOffloadUserClient - 457
+32:019  0:021  OCAK: Patching invalid size 15FF4 with 19EF000 for com.apple.iokit.IONetworkingFamily
+32:037  0:018  OCAK: com.apple.iokit.IONetworkingFamily got KXLD 0 0
+32:055  0:017  OCAK: Requesting __LINKEDIT for com.apple.iokit.IONetworkingFamily - 99D5D5B8 at 2524000
+32:073  0:017  OCAK: Requesting SymbolTable for com.apple.iokit.IONetworkingFamily - 1757
+32:205  0:131  OCAK: Local relocs 7087 on FFFFFF80040DF000
+32:230  0:025  OC: Prelinked injection Other\IOSkywalkFamily.kext () - Success
+32:253  0:022  OCAK: as.vit9696.AppleALC got KXLD 0 0
+32:272  0:019  OCAK: Requesting __LINKEDIT for as.vit9696.AppleALC - 9B8E63E8 at 40AD000
+32:291  0:019  OCAK: Requesting SymbolTable for as.vit9696.AppleALC - 444
+32:321  0:029  OCAK: Local relocs 5944 on FFFFFF80041AD000
+32:346  0:025  OC: Prelinked injection Other\AppleALC.kext () - Success
+32:365  0:018  OCAK: as.vit9696.SMCProcessor got KXLD 0 0
+32:384  0:018  OCAK: Requesting __LINKEDIT for as.vit9696.SMCProcessor - 9BAB53E8 at 427C000
+32:401  0:017  OCAK: Requesting SymbolTable for as.vit9696.SMCProcessor - 355
+32:419  0:018  OCAK: Requesting SymbolTable for as.vit9696.VirtualSMC - 27
+32:448  0:028  OCAK: Local relocs 325 on FFFFFF800437C000
+32:467  0:018  OC: Prelinked injection Other\SMCProcessor.kext () - Success
+32:487  0:020  OCAK: com.apple.iokit.IO80211FamilyLegacy got KXLD 0 0
+32:504  0:017  OCAK: Requesting __LINKEDIT for com.apple.iokit.IO80211FamilyLegacy - 9BAC1520 at 4288000
+32:523  0:018  OCAK: Requesting SymbolTable for com.apple.iokit.IO80211FamilyLegacy - 7553
+32:542  0:018  OCAK: Patching invalid size 3AFF1 with 253E000 for com.apple.driver.AppleMobileFileIntegrity
+32:560  0:017  OCAK: com.apple.driver.AppleMobileFileIntegrity got KXLD 0 0
+32:578  0:018  OCAK: Requesting __LINKEDIT for com.apple.driver.AppleMobileFileIntegrity - 9920E570 at 19D5000
+32:599  0:020  OCAK: Requesting SymbolTable for com.apple.driver.AppleMobileFileIntegrity - 1989
+32:619  0:020  OCAK: Patching invalid size AFF7 with 211E000 for com.apple.iokit.CoreAnalyticsFamily
+32:637  0:018  OCAK: com.apple.iokit.CoreAnalyticsFamily got KXLD 0 0
+32:668  0:031  OCAK: Requesting __LINKEDIT for com.apple.iokit.CoreAnalyticsFamily - 9962E430 at 1DF5000
+32:689  0:020  OCAK: Requesting SymbolTable for com.apple.iokit.CoreAnalyticsFamily - 866
+32:714  0:025  OCAK: Patching invalid size 81FE0 with E29000 for com.apple.kec.corecrypto
+32:732  0:017  OCAK: com.apple.kec.corecrypto got KXLD 0 0
+32:751  0:018  OCAK: Requesting __LINKEDIT for com.apple.kec.corecrypto - 9A9233E8 at 30EA000
+32:770  0:018  OCAK: Requesting SymbolTable for com.apple.kec.corecrypto - 1978
+32:790  0:020  OCAK: Patching invalid size AFF7 with 2042000 for com.apple.kext.CoreTrust
+32:809  0:019  OCAK: com.apple.kext.CoreTrust got KXLD 0 0
+32:828  0:018  OCAK: Requesting __LINKEDIT for com.apple.kext.CoreTrust - 9970A2A8 at 1ED1000
+32:847  0:018  OCAK: Requesting SymbolTable for com.apple.kext.CoreTrust - 396
+32:867  0:019  OCAK: Patching invalid size 24FF1 with 26B4000 for com.apple.security.AppleImage4
+32:886  0:018  OCAK: com.apple.security.AppleImage4 got KXLD 0 0
+32:903  0:017  OCAK: Requesting __LINKEDIT for com.apple.security.AppleImage4 - 99098520 at 185F000
+32:922  0:018  OCAK: Requesting SymbolTable for com.apple.security.AppleImage4 - 2193
+32:947  0:025  OCAK: Patching invalid size 22FF5 with E5A000 for com.apple.driver.corecapture
+32:965  0:018  OCAK: com.apple.driver.corecapture got KXLD 0 0
+32:992  0:026  OCAK: Requesting __LINKEDIT for com.apple.driver.corecapture - 9A8F24D0 at 30B9000
+33:011  0:018  OCAK: Requesting SymbolTable for com.apple.driver.corecapture - 1929
+33:042  0:031  OCAK: Requesting SymbolTable for com.apple.iokit.IOSkywalkFamily - 10350
+33:303  0:260  OCAK: Local relocs 8897 on FFFFFF8004388000
+33:330  0:026  OC: Prelinked injection Other\IO80211FamilyLegacy.kext () - Success
+33:348  0:018  OCAK: ru.joedm.SMCSuperIO got KXLD 0 0
+33:367  0:018  OCAK: Requesting __LINKEDIT for ru.joedm.SMCSuperIO - 9BCCB3E8 at 4492000
+33:384  0:017  OCAK: Requesting SymbolTable for ru.joedm.SMCSuperIO - 352
+33:411  0:027  OCAK: Local relocs 2647 on FFFFFF8004592000
+33:434  0:022  OC: Prelinked injection Other\SMCSuperIO.kext () - Success
+33:456  0:022  OCAK: com.zxystd.AirportItlwm got KXLD 0 0
+33:474  0:018  OCAK: Requesting __LINKEDIT for com.zxystd.AirportItlwm - 9BCEE3E8 at 44B5000
+33:493  0:018  OCAK: Requesting SymbolTable for com.zxystd.AirportItlwm - 12232
+33:511  0:018  OCAK: Requesting SymbolTable for com.apple.iokit.IO80211FamilyLegacy - 6501
+33:602  0:090  OCAK: Local relocs 2754 on FFFFFF80045B5000
+33:622  0:020  OC: Prelinked injection Other\AirportItlwm.kext () - Success
+33:642  0:019  OCAK: com.dhinakg.AMFIPass got KXLD 0 0
+33:661  0:018  OCAK: Requesting __LINKEDIT for com.dhinakg.AMFIPass - 9CC88438 at 544F000
+33:680  0:019  OCAK: Requesting SymbolTable for com.dhinakg.AMFIPass - 12996
+33:709  0:028  OCAK: Local relocs 8376 on FFFFFF800554F000
+33:735  0:026  OC: Prelinked injection Other\AMFIPass.kext () - Success
+33:754  0:018  OCAK: com.apple.driver.AppleIntelCPUPowerManagement got KXLD 0 0
+33:773  0:019  OCAK: Requesting __LINKEDIT for com.apple.driver.AppleIntelCPUPowerManagement - 9CD57480 at 551E000
+33:792  0:018  OCAK: Requesting SymbolTable for com.apple.driver.AppleIntelCPUPowerManagement - 1018
+33:818  0:026  OCAK: Local relocs 793 on FFFFFF800561E000
+33:837  0:018  OC: Prelinked injection Other\AppleIntelCPUPowerManagement.kext () - Success
+33:857  0:020  OCAK: com.apple.driver.AppleIntelCPUPowerManagementClient got KXLD 0 0
+33:875  0:018  OCAK: Requesting __LINKEDIT for com.apple.driver.AppleIntelCPUPowerManagementClient - 9CD95430 at 555C000
+33:893  0:018  OCAK: Requesting SymbolTable for com.apple.driver.AppleIntelCPUPowerManagementClient - 356
+33:919  0:025  OCAK: Local relocs 314 on FFFFFF800565C000
+33:939  0:019  OC: Prelinked injection Other\AppleIntelCPUPowerManagementClient.kext () - Success
+33:957  0:018  OCAK: as.acidanthera.BlueToolFixup got KXLD 0 0
+33:975  0:017  OCAK: Requesting __LINKEDIT for as.acidanthera.BlueToolFixup - 9CDA43E8 at 556B000
+33:993  0:018  OCAK: Requesting SymbolTable for as.acidanthera.BlueToolFixup - 521
+34:019  0:025  OCAK: Local relocs 314 on FFFFFF800566B000
+34:038  0:019  OC: Prelinked injection Other\BlueToolFixup.kext () - Success
+34:058  0:019  OCAK: as.acidanthera.BrightnessKeys got KXLD 0 0
+34:077  0:019  OCAK: Requesting __LINKEDIT for as.acidanthera.BrightnessKeys - 9CDAF398 at 5576000
+34:095  0:017  OCAK: Requesting SymbolTable for as.acidanthera.BrightnessKeys - 372
+34:116  0:021  OCAK: Patching invalid size 65000 with 1AC4000 for com.apple.iokit.IOHIDFamily
+34:134  0:018  OCAK: com.apple.iokit.IOHIDFamily got KXLD 0 0
+34:152  0:018  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOHIDFamily - 99C88570 at 244F000
+34:172  0:019  OCAK: Requesting SymbolTable for com.apple.iokit.IOHIDFamily - 4379
+34:194  0:022  OCAK: Patching invalid size 2FF8 with 1748000 for com.apple.iokit.IOReportFamily
+34:213  0:018  OCAK: com.apple.iokit.IOReportFamily got KXLD 0 0
+34:233  0:019  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOReportFamily - 9A004430 at 27CB000
+34:253  0:020  OCAK: Requesting SymbolTable for com.apple.iokit.IOReportFamily - 452
+34:339  0:086  OCAK: Local relocs 339 on FFFFFF8005676000
+34:357  0:017  OC: Prelinked injection Other\BrightnessKeys.kext () - Success
+34:375  0:018  OCAK: com.khronokernel.CryptexFixup got KXLD 0 0
+34:394  0:019  OCAK: Requesting __LINKEDIT for com.khronokernel.CryptexFixup - 9CDB93E8 at 5580000
+34:420  0:026  OCAK: Requesting SymbolTable for com.khronokernel.CryptexFixup - 334
+34:447  0:026  OCAK: Local relocs 316 on FFFFFF8005680000
+34:466  0:019  OC: Prelinked injection Other\CryptexFixup.kext () - Success
+34:485  0:018  OCAK: com.khronokernel.FeatureUnlock got KXLD 0 0
+34:504  0:019  OCAK: Requesting __LINKEDIT for com.khronokernel.FeatureUnlock - 9CDC23E8 at 5589000
+34:521  0:017  OCAK: Requesting SymbolTable for com.khronokernel.FeatureUnlock - 389
+34:546  0:025  OCAK: Local relocs 390 on FFFFFF8005689000
+34:564  0:017  OC: Prelinked injection Other\FeatureUnlock.kext () - Success
+34:583  0:018  OCAK: as.acidanthera.CSLVFixup got KXLD 0 0
+34:600  0:017  OCAK: Requesting __LINKEDIT for as.acidanthera.CSLVFixup - 9CDCE3E8 at 5595000
+34:620  0:019  OCAK: Requesting SymbolTable for as.acidanthera.CSLVFixup - 489
+34:647  0:026  OCAK: Local relocs 314 on FFFFFF8005695000
+34:666  0:019  OC: Prelinked injection Other\CSLVFixup.kext () - Success
+34:686  0:020  OCAK: com.1Revenger1.ECEnabler got KXLD 0 0
+34:707  0:020  OCAK: Requesting __LINKEDIT for com.1Revenger1.ECEnabler - 9CDD73E8 at 559E000
+34:726  0:019  OCAK: Requesting SymbolTable for com.1Revenger1.ECEnabler - 334
+34:752  0:025  OCAK: Local relocs 316 on FFFFFF800569E000
+34:770  0:018  OC: Prelinked injection Other\ECEnabler.kext () - Success
+34:788  0:017  OCAK: com.khronokernel.RSRHelper got KXLD 0 0
+34:806  0:017  OCAK: Requesting __LINKEDIT for com.khronokernel.RSRHelper - 9CDDF3E8 at 55A6000
+34:825  0:019  OCAK: Requesting SymbolTable for com.khronokernel.RSRHelper - 327
+34:851  0:025  OCAK: Local relocs 312 on FFFFFF80056A6000
+34:869  0:017  OC: Prelinked injection Other\RSRHelper.kext () - Success
+34:888  0:019  OCAK: as.lvs1974.HibernationFixup got KXLD 0 0
+34:907  0:019  OCAK: Requesting __LINKEDIT for as.lvs1974.HibernationFixup - 9CDE7438 at 55AE000
+34:925  0:018  OCAK: Requesting SymbolTable for as.lvs1974.HibernationFixup - 594
+34:952  0:027  OCAK: Local relocs 326 on FFFFFF80056AE000
+34:972  0:019  OC: Prelinked injection Other\HibernationFixup.kext () - Success
+34:992  0:020  OCAK: as.acidanthera.mieze.IntelMausi got KXLD 0 0
+35:012  0:019  OCAK: Requesting __LINKEDIT for as.acidanthera.mieze.IntelMausi - 9CDF6398 at 55BD000
+35:031  0:019  OCAK: Requesting SymbolTable for as.acidanthera.mieze.IntelMausi - 2136
+35:061  0:029  OCAK: Local relocs 656 on FFFFFF80056BD000
+35:082  0:020  OC: Prelinked injection Other\IntelMausi.kext () - Success
+35:102  0:020  OCAK: com.apple.kext.mologie.DisableLibraryValidation got KXLD 0 0
+35:121  0:019  OCAK: Requesting __LINKEDIT for com.apple.kext.mologie.DisableLibraryValidation - 9CE203E8 at 55E7000
+35:140  0:018  OCAK: Requesting SymbolTable for com.apple.kext.mologie.DisableLibraryValidation - 324
+35:166  0:026  OCAK: Local relocs 302 on FFFFFF80056E7000
+35:187  0:020  OC: Prelinked injection Other\DisableLibraryValidation.kext () - Success
+35:206  0:019  OCAK: ru.usrsse2.SMCBatteryManager got KXLD 0 0
+35:225  0:018  OCAK: Requesting __LINKEDIT for ru.usrsse2.SMCBatteryManager - 9CE283E8 at 55EF000
+35:245  0:020  OCAK: Requesting SymbolTable for ru.usrsse2.SMCBatteryManager - 1219
+35:269  0:023  OCAK: Patching invalid size 1FFE with 16B2000 for com.apple.iokit.IOSMBusFamily
+35:291  0:021  OCAK: com.apple.iokit.IOSMBusFamily got KXLD 0 0
+35:308  0:017  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOSMBusFamily - 9A09A3E0 at 2861000
+35:327  0:018  OCAK: Requesting SymbolTable for com.apple.iokit.IOSMBusFamily - 381
+35:357  0:030  OCAK: Local relocs 809 on FFFFFF80056EF000
+35:378  0:021  OC: Prelinked injection Other\SMCBatteryManager.kext () - Success
+35:400  0:021  OCAK: com.dhinakg.USBToolBox.kext got KXLD 0 0
+35:418  0:018  OCAK: Requesting __LINKEDIT for com.dhinakg.USBToolBox.kext - 9CE40348 at 5607000
+35:437  0:018  OCAK: Requesting SymbolTable for com.dhinakg.USBToolBox.kext - 342
+35:458  0:021  OCAK: Patching invalid size FFF with 1287000 for com.apple.driver.AppleUSBHostMergeProperties
+35:485  0:027  OCAK: com.apple.driver.AppleUSBHostMergeProperties got KXLD 0 0
+35:503  0:018  OCAK: Requesting __LINKEDIT for com.apple.driver.AppleUSBHostMergeProperties - 9A4C5430 at 2C8C000
+35:521  0:017  OCAK: Requesting SymbolTable for com.apple.driver.AppleUSBHostMergeProperties - 331
+35:549  0:027  OCAK: Local relocs 310 on FFFFFF8005707000
+35:569  0:020  OC: Prelinked injection Other\USBToolBox.kext () - Success
+35:590  0:020  OC: Prelinked injection Other\UTBMap.kext () - Success
+35:609  0:019  OCAK: as.acidanthera.voodoo.driver.PS2Controller got KXLD 0 0
+35:628  0:018  OCAK: Requesting __LINKEDIT for as.acidanthera.voodoo.driver.PS2Controller - 9CE4A3E8 at 5611000
+35:646  0:017  OCAK: Requesting SymbolTable for as.acidanthera.voodoo.driver.PS2Controller - 1256
+35:676  0:030  OCAK: Local relocs 1582 on FFFFFF8005711000
+35:696  0:020  OC: Prelinked injection Other\VoodooPS2Controller.kext () - Success
+35:717  0:020  OCAK: as.acidanthera.voodoo.driver.PS2Trackpad got KXLD 0 0
+35:735  0:018  OCAK: Requesting __LINKEDIT for as.acidanthera.voodoo.driver.PS2Trackpad - 9CE64398 at 562B000
+35:756  0:020  OCAK: Requesting SymbolTable for as.acidanthera.voodoo.driver.PS2Trackpad - 630
+35:776  0:020  OCAK: Requesting SymbolTable for as.acidanthera.voodoo.driver.PS2Controller - 906
+35:814  0:037  OCAK: Local relocs 1534 on FFFFFF800572B000
+35:833  0:018  OC: Prelinked injection Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Trackpad.kext () - Success
+35:852  0:018  OCAK: as.acidanthera.voodoo.driver.PS2Keyboard got KXLD 0 0
+35:869  0:017  OCAK: Requesting __LINKEDIT for as.acidanthera.voodoo.driver.PS2Keyboard - 9CE8A3E8 at 5651000
+35:889  0:019  OCAK: Requesting SymbolTable for as.acidanthera.voodoo.driver.PS2Keyboard - 382
+35:917  0:027  OCAK: Local relocs 346 on FFFFFF8005751000
+35:937  0:020  OC: Prelinked injection Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Keyboard.kext () - Success
+35:955  0:018  OCAK: as.acidanthera.voodoo.driver.PS2Mouse got KXLD 0 0
+35:973  0:017  OCAK: Requesting __LINKEDIT for as.acidanthera.voodoo.driver.PS2Mouse - 9CE97348 at 565E000
+35:991  0:018  OCAK: Requesting SymbolTable for as.acidanthera.voodoo.driver.PS2Mouse - 350
+36:016  0:025  OCAK: Local relocs 333 on FFFFFF800575E000
+36:035  0:018  OC: Prelinked injection Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooPS2Mouse.kext () - Success
+36:055  0:019  OCAK: me.kishorprins.VoodooInput got KXLD 0 0
+36:074  0:019  OCAK: Requesting __LINKEDIT for me.kishorprins.VoodooInput - 9CEA0398 at 5667000
+36:093  0:019  OCAK: Requesting SymbolTable for me.kishorprins.VoodooInput - 1069
+36:124  0:031  OCAK: Local relocs 1339 on FFFFFF8005767000
+36:144  0:020  OC: Prelinked injection Other\VoodooPS2Controller.kext\Contents\PlugIns\VoodooInput.kext () - Success
+36:164  0:019  OCAK: as.vit9696.RestrictEvents got KXLD 0 0
+36:183  0:018  OCAK: Requesting __LINKEDIT for as.vit9696.RestrictEvents - 9CEBB438 at 5682000
+36:201  0:018  OCAK: Requesting SymbolTable for as.vit9696.RestrictEvents - 597
+36:229  0:028  OCAK: Local relocs 315 on FFFFFF8005782000
+36:250  0:020  OC: Prelinked injection Other\RestrictEvents.kext () - Success
+36:269  0:019  OC: Prelink size 90763264 kext offset 66138112 reserved 24625152
+36:288  0:018  OCAK: KC TEXT is 65536 bytes with 61808 Mach-O headers need 2200
+36:325  0:037  OCAK: [OK] Success AppleCpuPmCfgLock patch
+36:345  0:020  OCAK: Patching invalid size 17000 with 1BF0000 for com.apple.iokit.IOAHCIBlockStorage
+36:364  0:018  OCAK: com.apple.iokit.IOAHCIBlockStorage got KXLD 0 0
+36:384  0:020  Replace 4150504C452053534400 by 00000000000000000000 at ofs:13425
+36:807  0:423  OCAK: 64-bit IOAHCIBlockStorageV1 replace count - 1
+36:825  0:018  OCAK: [OK] Patch success legacy com.apple.iokit.IOAHCIBlockStorage V1
+36:844  0:019  Replace 4150504C4500 by 000000000000 at ofs:133B4
+37:140  0:295  OCAK: 64-bit IOAHCIBlockStorageV2 replace count - 1
+37:158  0:017  OCAK: [OK] Patch success legacy com.apple.iokit.IOAHCIBlockStorage V2
+37:177  0:018  OCAK: [OK] Patch success com.apple.iokit.IOPCIFamily AppleIoMapperMapping
+37:205  0:028  OCAK: Patching invalid size 5FF4 with 2491000 for com.apple.driver.AppleRTC
+37:224  0:019  OCAK: com.apple.driver.AppleRTC got KXLD 0 0
+37:243  0:018  Replace BE58000000/FFFEFFFFFF(BE58000000) by BEFFFF0000 at ofs:1B2C
+37:725  0:481  Replace BE58000000/FFFEFFFFFF(BE59000000) by BEFFFF0000 at ofs:1B3D
+38:204  0:479  Replace BE58000000/FFFEFFFFFF(BE58000000) by BEFFFF0000 at ofs:1E2E
+38:703  0:498  Replace BE58000000/FFFEFFFFFF(BE59000000) by BEFFFF0000 at ofs:1E3E
+39:181  0:478  OCAK: 64-bit DisableRtcChecksum64 replace count - 4
+39:199  0:018  OCAK: [OK] Patch success com.apple.driver.AppleRTC DisableRtcChecksum
+39:217  0:018  OC: Prelinked patch [0] Disable FileVault
+39:241  0:023  OCAK: Patching invalid size 1C8FF0 with 1039000 for com.apple.filesystems.apfs
+39:260  0:018  OCAK: com.apple.filesystems.apfs got KXLD 0 0
+39:279  0:019  Replace 000000000000 by B800000000C3 at ofs:4CD
+39:557  0:278  OCAK: 64-bit Disable FileVault replace count - 1
+39:577  0:019  OC: Prelinked patcher result 0 for com.apple.filesystems.apfs (Disable FileVault) - Success
+39:604  0:027  OC: Prelinked status - Success
+39:644  0:039  OC: Opening file usr\standalone\OS.dmg.root_hash with 1 mode gave - Success
+39:942  0:297  OC: Opening file usr\standalone\OS.dmg.root_hash.x86legacyap.im4m with 1 mode gave - Success
