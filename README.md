@@ -43,7 +43,7 @@ This repository contains the OpenCore and CLOVER EFI configuration files require
 5. **Post-Installation Patches:** Download the latest official release of [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases) to apply the necessary volume root patches for graphics acceleration.
 *(Note: Only use the official Dortania releases, as non-standard builds may trigger network, graphics, or audio stability issues).*
 
-## Optional and not needed from version 1.1.0
+## Optional and not needed to unlock bios from EFI version 1.1.0.
 1. **BIOS Downgrade:** Downgrade your BIOS to **v2.60**. This specific version is required for the `1vyrain` exploit to function.
 2. **Apply 1vyrain Patch:** Use the 1vyrain LiveUSB image (Revision 5):
    * [1vyrain GitHub Repository](https://github.com/n4ru/1vyrain)
