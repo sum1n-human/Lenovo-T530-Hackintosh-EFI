@@ -22,7 +22,7 @@ This repository contains the OpenCore and CLOVER EFI configuration files require
 
 ### Working
 * Graphics acceleration and Metal support on Intel HD 4000 using OCLP
-* Native Wi-Fi support after OCLP root patching
+* Native Wi-Fi support
 * Native boot via OpenCore
 * Audio and internal microphone
 * Bluetooth
