@@ -36,6 +36,14 @@ This repository contains the OpenCore and CLOVER EFI configuration files require
 
 ## 🚀 Getting Started
 
+1. **Standard BIOS Adjustments:** Set your SATA Controller to `AHCI`, disable `Secure Boot` and the `Security Chip`, and set the Boot Mode to `UEFI Only` (or `Both` with CSM enabled/disabled depending on configuration).
+2. **Virtualization Settings:** Enable Intel VT-d (Virtualization Technology for Directed I/O) to successfully enable AppleVTD functionalities.
+3. **Generate SMBIOS:** Before attempting to boot, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate a unique Serial Number, Board Serial, and SmUUID for your config.
+4. **Installation:** Setup a vanilla macOS Sequoia or Tahoe installer USB media, copy this repository's EFI folder structure directly into your USB drive's EFI partition, and boot.
+5. **Post-Installation Patches:** Download the latest official release of [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases) to apply the necessary volume root patches for graphics acceleration.
+*(Note: Only use the official Dortania releases, as non-standard builds may trigger network, graphics, or audio stability issues).*
+
+## Optional and not needed from version 1.1.0
 1. **BIOS Downgrade:** Downgrade your BIOS to **v2.60**. This specific version is required for the `1vyrain` exploit to function.
 2. **Apply 1vyrain Patch:** Use the 1vyrain LiveUSB image (Revision 5):
    * [1vyrain GitHub Repository](https://github.com/n4ru/1vyrain)
@@ -51,13 +59,7 @@ This repository contains the OpenCore and CLOVER EFI configuration files require
      * **Bit Rate:** 24 bit
    
    *(Note: If you are unable to unlock the BIOS, you must enable `AppleCpuPmCfgLock` inside `Kernel > Quirks` in your config.plist).*
-5. **Standard BIOS Adjustments:** Set your SATA Controller to `AHCI`, disable `Secure Boot` and the `Security Chip`, and set the Boot Mode to `UEFI Only` (or `Both` with CSM enabled/disabled depending on configuration).
-6. **Virtualization Settings:** Enable Intel VT-d (Virtualization Technology for Directed I/O) to successfully enable AppleVTD functionalities.
-7. **Generate SMBIOS:** Before attempting to boot, use [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) to generate a unique Serial Number, Board Serial, and SmUUID for your config.
-8. **Installation:** Setup a vanilla macOS Sequoia or Tahoe installer USB media, copy this repository's EFI folder structure directly into your USB drive's EFI partition, and boot.
-9. **Post-Installation Patches:** Download the latest official release of [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases) to apply the necessary volume root patches for graphics acceleration.
    
-   *(Note: Only use the official Dortania releases, as non-standard builds may trigger network, graphics, or audio stability issues).*
 <img width="1920" height="1080" alt="Screenshot 2026-11-04 at 00 26 24" src="https://github.com/user-attachments/assets/bba4de75-c149-436c-b61d-3cfd3c57cc27" />
 <img width="1920" height="1080" alt="Screenshot 2026-11-04 at 00 26 11" src="https://github.com/user-attachments/assets/d3fcbf13-f2a0-465a-9577-8bd83e0dcf64" />
 <img width="1920" height="1080" alt="Screenshot 2026-11-04 at 00 25 37" src="https://github.com/user-attachments/assets/34afaa09-67ee-4d03-9df4-bdeee4b4a04d" />
