@@ -1,4 +1,4 @@
-# Lenovo ThinkPad T530 macOS Sequoia EFI
+# Lenovo ThinkPad T530 macOS 15 and 26 EFI
 
 This repository contains the OpenCore EFI configuration files required to run **macOS Sequoia 15.7.9 natively on a Lenovo ThinkPad T530**. 
 
