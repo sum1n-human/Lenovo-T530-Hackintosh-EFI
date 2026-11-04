@@ -33,7 +33,7 @@ This repository contains the OpenCore and CLOVER EFI configuration files require
 
 ### Requires Post-Install Patching
 * **Graphics:** Intel HD 4000 graphics acceleration requires OpenCore Legacy Patcher (OCLP) root volume patches.
-* **Wi-Fi/Bluetooth:** Compatibility depends on your specific card; Broadcom or Intel cards will require matching kexts and OCLP root patching.
+* **Wi-Fi/Bluetooth:** Compatibility depends on your specific card; Broadcom or Intel cards will require matching kexts.
 
 ## 🚀 Getting Started
 
