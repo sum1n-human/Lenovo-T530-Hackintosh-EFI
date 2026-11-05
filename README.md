@@ -134,16 +134,16 @@ If you choose to bypass restrictions manually (e.g., to natively resolve CFG Loc
 Below are standard configurations demonstrating functional macOS operating platform targets executing successfully on the T530 target environment.
 
 #### macOS Sequoia 15 Build Details
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 at 00 25 37" src="https://github.com/user-attachments/assets/a2370ce0-7e7c-41de-9de4-1fe826d4821b" />
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 at 00 26 24" src="https://github.com/user-attachments/assets/2eebd725-4cf4-445c-9358-ae29499a401c" />
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 at 00 26 11" src="https://github.com/user-attachments/assets/f6cbaae8-91f1-4332-82c7-808ab3c26c7c" />
 
-| About This Mac (Sequoia Detail Panel) | System Overview Overview (Sequoia Matrix) |
-| :---: | :---: |
-| <img width="480" alt="macOS Sequoia Overview Pane" src="https://github.com" /> | <img width="480" alt="macOS Sequoia Detailed Settings Panel" src="https://github.com" /> |
 
 #### macOS Tahoe 26 Build Details
 
-| About This Mac (Tahoe Core Specifications Panel) | Applications Environment Grid Overview |
-| :---: | :---: |
-| <img width="480" alt="macOS Tahoe Overview Pane" src="https://github.com" /> | <img width="480" alt="macOS Tahoe Launchpad Application Drawer" src="https://github.com" /> |
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 53 27" src="https://github.com/user-attachments/assets/1fd1efc5-36aa-42f7-bfb8-1c4ae2bd6f1c" /><img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 56 51" src="https://github.com/user-attachments/assets/f7e97605-a60a-41f7-9e2f-e0e96b2049e7" />
+<img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 56 24" src="https://github.com/user-attachments/assets/ef461dca-b06c-4b14-8f9f-074ee26415f6" />
+
 
 ---
 
