@@ -20,7 +20,8 @@ Bootloader	OpenCore v1.0.7
 
 ⚙️ What Works & What Doesn't
 
-⚠️ Important Architecture Note: Running macOS Sequoia and Tahoe on legacy Ivy Bridge hardware requires dedicated volume root patching via OpenCore Legacy Patcher (OCLP) to bring back native Metal graphics acceleration support.
+[!WARNING]
+Important Architecture Note: Running macOS Sequoia and Tahoe on legacy Ivy Bridge hardware requires dedicated volume root patching via OpenCore Legacy Patcher (OCLP) to bring back native Metal graphics acceleration support.
 
 Working
 
@@ -43,10 +44,7 @@ Requires Post-Install Action
 
 1. Required BIOS Settings
 
-Configure your ThinkPad firmware precisely before launching the macOS installer target environment. Refer to the placeholder tables below to upload your actual setup configurations:
-
-Target Standard Parameter Map
-
+Configure your ThinkPad firmware precisely before launching the macOS installer target environment:
 • SATA Controller: AHCI
 • Secure Boot: Disabled
 • Security Chip: Disabled
@@ -67,7 +65,8 @@ BIOS Configuration Pane View	Advanced Storage / Security Settings
 2. Deploy EFI Structure: Format a vanilla macOS Sequoia or Tahoe recovery/install media drive. Copy the repository's EFI directory directly into the designated FAT32 EFI partition structure.
 3. Boot and Install: Target the USB drive via your ThinkPad's boot menu (F12), initialize your drive utility framework, and complete the standard macOS installation process.
 4. Deploy OCLP Volume Patches: Once booted onto the desktop environment, download the official release distribution of OpenCore Legacy Patcher. Launch the utility and select Start Root Patching to deploy the required legacy graphics configuration payloads.
-(Note: Rely strictly on validated Dortania releases to bypass potential network, stability, or visual frame artifacts).
+[!NOTE]
+Rely strictly on validated Dortania releases to bypass potential network, stability, or visual frame artifacts.
 
 🔄 OTA System Software Updates
 
@@ -81,7 +80,8 @@ Seamless Update Protocol
 
 🔓 Advanced Optional Section: Unlocking Hidden BIOS Features
 
-(Note: These modifications are entirely optional and are not required to achieve a functional boot condition or clear updates cleanly beginning with EFI release version 1.1.0).
+[!NOTE]
+These modifications are entirely optional and are not required to achieve a functional boot condition or clear updates cleanly beginning with EFI release version 1.1.0.
 If you choose to bypass restrictions manually (e.g., to natively resolve CFG Lock properties or configure explicit DVMT values without relying on OpenCore configuration quirks), follow this sequence:
 1. BIOS Firmware Control: Downgrade your parent firmware revision down to stock version v2.60. This rollback is required to exploit vulnerability patterns utilized by the 1vyrain script layer.
 2. Obtain 1vyrain Chain Assets: Acquire the Revision 5 LiveUSB system environment deployment structure:
@@ -96,7 +96,8 @@ If you choose to bypass restrictions manually (e.g., to natively resolve CFG Loc
 	• IGD Configuration Details:
 		• Connector Type: eDP A
 		• Bit Rate: 24 bit
-(Configuration Workaround Note: If you choose to keep your factory hardware completely stock and pass on the advanced 1vyrain flashing process, you must keep the AppleCpuPmCfgLock toggle set to True within the Kernel > Quirks section block inside your target config.plist).
+[!TIP]
+Configuration Workaround Note: If you choose to keep your factory hardware completely stock and pass on the advanced 1vyrain flashing process, you must keep the AppleCpuPmCfgLock toggle set to True within the Kernel > Quirks section block inside your target config.plist.
 
 📸 Screenshots & Proof of Concept
 
@@ -125,4 +126,3 @@ About This Mac (Tahoe Core Specifications Panel)	Applications Environment Grid O
 • @USBToolBox for engineering scalable hardware port translation maps and filter modules.
 • The OpenCore Legacy Patcher Engineering Team for making modern versions of macOS accessible on legacy architectures.
 • @laobamac for contributing optimized audio parameter metrics and custom wireless driver options.
-Would you like assistance drafting detailed labels or markup values for your BIOS screenshots section, or do you need help debugging your config files for Secure Boot emulation to optimize the update experience?
