@@ -56,9 +56,24 @@ Configure your ThinkPad firmware precisely before launching the macOS installer 
 
 #### Firmware Reference Verification Logs
 
-| BIOS Configuration Pane View | Advanced Storage / Security Settings |
-| :---: | :---: |
-| _[Insert your T530 BIOS Main Page screenshot here]_ | _[Insert your T530 Security/SATA Mode screenshot here]_ |
+BIOS  Settings<img width="3450" height="1957" alt="20261105_075520" src="https://github.com/user-attachments/assets/1f23b6ad-1661-4fa0-a69e-dadef1cdaf79" />
+<img width="3399" height="1911" alt="20261105_075426" src="https://github.com/user-attachments/assets/d46d5d57-d711-4d9a-a70b-2724a4b21ce4" />
+<img width="3467" height="1962" alt="20261105_075319" src="https://github.com/user-attachments/assets/f3af1175-6ccb-4a9d-8960-7abb5bfc56e6" />
+<img width="3351" height="1910" alt="20261105_075201" src="https://github.com/user-attachments/assets/4cc4fd5e-5292-42e0-893a-b7a06183fcc3" />
+<img width="3402" height="1882" alt="20261105_075043" src="https://github.com/user-attachments/assets/94677287-fa1c-4b5a-a3e9-8e5a14606e0c" />
+<img width="3494" height="1960" alt="20261105_074936" src="https://github.com/user-attachments/assets/e35aeca5-2c43-420d-b7fb-f31535116c89" />
+<img width="3459" height="1969" alt="20261105_074835" src="https://github.com/user-attachments/assets/90b92a54-5af3-405b-97d8-4b782c05da8c" />
+<img width="3517" height="1959" alt="20261105_074630" src="https://github.com/user-attachments/assets/d3fc04de-5830-49bd-9da2-dceb16ee9a08" />
+<img width="3339" height="1827" alt="20261105_074528" src="https://github.com/user-attachments/assets/0b50737d-e0d4-43a8-ae77-15b8272a0760" />
+<img width="3509" height="1959" alt="20261105_074408" src="https://github.com/user-attachments/assets/e7279b59-9e2a-4fe9-b0d4-efe17212cbaf" />
+<img width="3601" height="1982" alt="20261105_074255" src="https://github.com/user-attachments/assets/c3c50860-c5b8-414b-b72a-e93177af3224" />
+<img width="3350" height="1890" alt="20261105_074116" src="https://github.com/user-attachments/assets/2f389aa0-e241-4344-a150-b1798857de77" />
+<img width="3503" height="1934" alt="20261105_073937" src="https://github.com/user-attachments/assets/d5b8a818-af0b-43ec-8def-7b625e07d4df" />
+<img width="3467" height="1990" alt="20261105_073828" src="https://github.com/user-attachments/assets/797b684c-e49b-43a6-97d4-69f634f75520" />
+<img width="3301" height="1848" alt="20261105_073453" src="https://github.com/user-attachments/assets/5f87e983-28d7-4d0d-87a9-83cd7dc825a8" />
+
+<img width="3420" height="2036" alt="20261105_073336" src="https://github.com/user-attachments/assets/82116214-75b4-45b0-8448-5db3437226ec" />
+
 
 ---
 
