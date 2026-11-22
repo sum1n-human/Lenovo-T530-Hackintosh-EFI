@@ -141,10 +141,10 @@ Below are standard configurations demonstrating functional macOS operating platf
 
 ## 🤝 Credits
 
-* [@Acidanthera](https://github.com) for creating the OpenCore boot loader ecosystem alongside its underlying essential kext modules.
-* [@corpnewt](https://github.com) for deploying essential utilities including `SSDTTime`, `GenSMBIOS`, and the `ProperTree` plist interpretation environment.
-* [@Dortania](https://github.com) for hosting open documentation paradigms and the primary OpenCore initial configuration blueprint map.
-* [@USBToolBox](https://github.com) for engineering scalable hardware port translation maps and filter modules.
+* [@Acidanthera](https://github.com/acidanthera) for creating the OpenCore boot loader ecosystem alongside its underlying essential kext modules.
+* [@corpnewt](https://github.com/corpnewt) for deploying essential utilities including `SSDTTime`, `GenSMBIOS`, and the `ProperTree` plist interpretation environment.
+* [@Dortania](https://github.com/dortania) for hosting open documentation paradigms and the primary OpenCore initial configuration blueprint map.
+* [@USBToolBox](https://github.com/USBToolBox) for engineering scalable hardware port translation maps and filter modules.
 * The **OpenCore Legacy Patcher Engineering Team** for making modern versions of macOS accessible on legacy architectures.
-* [@laobamac](https://github.com) for contributing optimized audio parameter metrics and custom wireless driver options.
-* [@Mieze](https://github.com) for contributing intel Ethernet driver.
+* [@laobamac](https://github.com/laobamac) for contributing optimized audio parameter metrics and custom wireless driver options.
+* [@Mieze](https://github.com/Mieze) for contributing intel Ethernet driver.
