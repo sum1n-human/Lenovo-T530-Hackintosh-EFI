@@ -1,0 +1,62 @@
+Guide to Flashing and Unlocking the BIOS (1vyrain)
+
+Part 1: Downgrade / Flash the Stock BIOS
+
+1. Create a Bootable MS-DOS USB: Download Rufus and use it to create a bootable MS-DOS (or FreeDOS) USB flash drive. (https://github.com/pbatard/rufus/releases)
+2. Copy the BIOS Files: Copy the bios260 folder (found inside the "only file require to flash bios" directory) onto the root of your MS-DOS USB drive.
+3. Enter BIOS Setup: Turn on or reboot your laptop and immediately press F1 to enter the BIOS settings.
+4. Configure BIOS Settings: Adjust the settings as suggested in this GitHub repository:
+	• Go to the Startup tab and make sure UEFI/Legacy Boot is set to Both.
+	• Set the UEFI BIOS Update Option exactly as shown in the README section of this project page.
+	• Press F10 to save and exit. As soon as text appears on the screen during reboot, press F12 repeatedly to open the Boot Menu.
+	• Select your USB drive from the boot picker and press Enter.
+5. Flash the BIOS in DOS: Once you reach the MS-DOS command prompt, type the following commands one by one and press Enter after each:dos
+dir
+cd bios260
+dosflash /sd /file bios.fl1
+
+Use code with caution.
+(Note: dir lists the directories, cd bios260 opens the folder containing the flash files, and dosflash flashes the BIOS chip.)
+6. Wait for Completion (Critical Warning):
+	• Do not press any keys during the flashing process.
+	• Do not disconnect your computer from the power source. Losing power mid-flash will brick your BIOS chip. Recovering a bricked chip requires a CH341A EEPROM programmer or a Raspberry Pi, which involves desoldering the chip from the motherboard, manually flashing the bios.fl1 file, and resoldering it.
+	• Hardware Warning: Always verify the pin voltage before connecting a BIOS chip—some CH341A programmers output the wrong voltage (5V instead of 3.3V) and can permanently destroy the chip. Always read the chip's datasheet carefully before taking action.
+7. Reboot: Once the flash finishes, you will see the Lenovo logo or POST text depending on your BIOS settings. Press F1 to enter the BIOS and verify your settings.
+
+Part 2: Create and Run the 1vyrain Bootable USB
+
+Step 1: Create the 1vyrain USB Drive
+
+• For Windows Users: Use balenaEtcher to flash the 1vyrain.iso image onto your USB drive.
+• For Linux Users:
+	1. Identify your USB drive letter (e.g., sdb or sdc) by running
+sudo fdisk -l
+
+	2. Convert the USB drive to a GPT partition scheme using gdisk or GParted. To use gdisk, run (replace X with your actual drive letter)
+sudo gdisk /dev/sdX
+
+Inside gdisk, enter the following commands in order:
+		• o (creates a new, empty GPT table and removes the old partition layout)
+		• y (confirms the action)
+		• w (writes the changes to the disk)
+		• y (confirms writing to the disk)
+	3. Write the 1vyrain.iso image to the USB drive using dd (replace X with your drive letter, and feel free to drag and drop the .iso file into the terminal after if=)
+sudo dd if=1vyrain.iso of=/dev/sdX bs=4M status=progress conv=fsync
+
+Step 2: Run the 1vyrain Exploit
+
+1. Reboot your PC, press F12, select your USB drive, and boot from it.
+2. Follow the on-screen instructions. When the laptop enters deep sleep mode, press the Power button to wake the system up and continue following the prompts until you see "Choose your option".
+3. Select Option 1 and press Enter.
+	• If it gives an error: Press Enter multiple times or wait a moment for the computer to automatically reboot.
+	• If Option 1 is unsuccessful: Repeat the boot and sleep/wake steps until the "Choose your option" menu appears again, then select Option 2 and press Enter.
+
+Part 3: Final BIOS Configuration (macOS / Hackintosh Setup)
+
+Once the exploit completes, your computer will reboot and the BIOS settings will reset to factory defaults. Press F1 to enter the BIOS and configure the following:
+1. Re-apply the general BIOS settings recommended in this repository's guide.
+2. Go to the Advanced section and adjust the graphics settings as specified in the README.
+3. Intel Management Engine (ME): Keep this Enabled (default) if you want graphics acceleration to work in macOS.
+4. Intel AMT: Do not try to disable Intel AMT 1vyrain exploit relies on it, and it will automatically re-enable on the next reboot anyway.
+5. Intel Rapid Start Technology: Make sure to Disable this feature.
+Well done! You have successfully unlocked your BIOS.
