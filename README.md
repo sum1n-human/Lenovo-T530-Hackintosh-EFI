@@ -136,6 +136,12 @@ Below are standard configurations demonstrating functional macOS operating platf
 <img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 53 27" src="https://github.com/user-attachments/assets/1fd1efc5-36aa-42f7-bfb8-1c4ae2bd6f1c" /><img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 56 51" src="https://github.com/user-attachments/assets/f7e97605-a60a-41f7-9e2f-e0e96b2049e7" />
 <img width="1920" height="1080" alt="Screenshot 2026-11-04 at 01 56 24" src="https://github.com/user-attachments/assets/ef461dca-b06c-4b14-8f9f-074ee26415f6" />
 
+#### Lenovo ThinkPad T530 Hackintosh Demo
+
+[![Watch the macOS Tahoe 26 Hackintosh demo](https://img.youtube.com/vi/SLbelno_LfA/hqdefault.jpg)](https://youtu.be/SLbelno_LfA)
+
+[Watch the video on YouTube](https://youtu.be/SLbelno_LfA)
+
 
 ---
 
