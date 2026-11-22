@@ -148,3 +148,5 @@ Below are standard configurations demonstrating functional macOS operating platf
 * The **OpenCore Legacy Patcher Engineering Team** for making modern versions of macOS accessible on legacy architectures.
 * [@laobamac](https://github.com/laobamac) for contributing optimized audio parameter metrics and custom wireless driver options.
 * [@Mieze](https://github.com/Mieze) for contributing intel Ethernet driver.
+* [@Lenovo](https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t530/downloads/driver-list)
+ for  providing BIOS image file.
