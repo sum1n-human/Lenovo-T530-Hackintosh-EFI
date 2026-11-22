@@ -147,3 +147,4 @@ Below are standard configurations demonstrating functional macOS operating platf
 * [@USBToolBox](https://github.com) for engineering scalable hardware port translation maps and filter modules.
 * The **OpenCore Legacy Patcher Engineering Team** for making modern versions of macOS accessible on legacy architectures.
 * [@laobamac](https://github.com) for contributing optimized audio parameter metrics and custom wireless driver options.
+* [@Mieze](https://github.com) for contributing intel Ethernet driver.
